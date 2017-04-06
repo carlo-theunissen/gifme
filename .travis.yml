@@ -17,6 +17,7 @@ cache:
     - $COMPOSER_CACHE_DIR
 
 before_script:
+  - phpenv config-add custom.php.ini
   - composer selfupdate
   - composer install --dev --prefer-source
 
