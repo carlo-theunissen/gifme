@@ -76,3 +76,28 @@ oneup_uploader:
             frontend: dropzone # or any uploader you use in the frontend
             storage:
                 directory: "%kernel.root_dir%/../uploads/"
+
+video_upload:
+    ffprobe_command: DEFAULT
+    accepted_formats:
+        - avi
+        - cavsvideo
+        - cdxl
+        - dvd
+        - f4v
+        - flv
+        - ipod
+        - m4v
+        - webm
+        - mov
+        - mp4
+        - m4a
+        - 3gp
+        - mj2
+        - mp4
+        - mpeg
+        - mpeg1video
+        - mpeg2video
+        - ogg
+        - ogv
+        - h264

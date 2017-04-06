@@ -1,4 +1,13 @@
 services:
+    video_upload.ffprobe:
+        class: VideoUploadBundle\DependencyInjection\FFProbe
+        arguments: ["%video_upload.ffprobe_command%"]
+
+    video_upload.video_validator:
+        class: VideoUploadBundle\Validators\VideoValidator
+        arguments: ["@video_upload.ffprobe", "%video_upload.accepted_formats%"]
+        tags:
+            - { name: kernel.event_listener, event: oneup_uploader.validation, method: onValidate }
 #    video_upload.example:
 #        class: VideoUploadBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]

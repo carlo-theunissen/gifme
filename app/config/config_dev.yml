@@ -11,6 +11,9 @@ web_profiler:
     toolbar: true
     intercept_redirects: false
 
+video_upload:
+    ffprobe_command: C:\Users\carlo\Downloads\ffprobe.exe
+
 monolog:
     handlers:
         main:
