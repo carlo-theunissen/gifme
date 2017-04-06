@@ -1,0 +1,11 @@
+video_upload:
+    resource: "@VideoUploadBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+oneup_uploader:
+    resource: .
+    type: uploader

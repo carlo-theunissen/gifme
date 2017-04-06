@@ -1,0 +1,30 @@
+sudo: required
+
+language: php
+
+os:
+  - linux
+
+php:
+  - 5.6
+
+env:
+  - SYMFONY_VERSION=3.2.*
+
+cache:
+  directories:
+    - $COMPOSER_CACHE_DIR
+
+before_script:
+  - composer selfupdate
+  - composer install --dev --prefer-source
+
+script: bash building/build.sh
+
+notifications:
+  email:
+    -  carlotheunissen96@gmail.com
+
+branches:
+  only:
+  - master
