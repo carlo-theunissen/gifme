@@ -101,3 +101,6 @@ video_upload:
         - ogg
         - ogv
         - h264
+        - h261
+        - h263
+

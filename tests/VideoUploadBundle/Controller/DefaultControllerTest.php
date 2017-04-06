@@ -3,12 +3,26 @@
 namespace VideoUploadBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use VideoUploadBundle\Tests\AbstractTest;
 
-class DefaultControllerTest extends WebTestCase
+class DefaultControllerTest extends AbstractTest
 {
-    public function testIndex()
+    /**
+     * @dataProvider urlProvider
+     */
+    public function testRoutes($url)
     {
-        $this->assertTrue(true);
+        $client = $this->GetClient();
+        $client->request('GET', $url);
+
+        $this->assertTrue($client->getResponse()->isSuccessful());
     }
-    
+
+    public function urlProvider()
+    {
+        return array(
+            array('/upload'),
+        );
+    }
+
 }

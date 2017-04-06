@@ -12,18 +12,17 @@ class FFProbe
     public function getFileInfo($url){
         $builder = new ProcessBuilder();
         $builder->setPrefix($this->prefix);
-        $builder->setArguments(array('-loglevel', 'quiet', '-show_format', '-print_format', 'json'));
+        $builder->setArguments(array('-show_streams', '-select_streams', 'v', '-loglevel',  'quiet', '-show_format', '-print_format', 'json', '--', $url));
         $builder->setInput($url);
-
-        $builder->getProcess()->run();
-        if(!$builder->getProcess()->isSuccessful()){
+        $process = $builder->getProcess();
+        $process->run();
+        if(!$process->isSuccessful()){
             return null;
         }
-
-        return $this->processOutput($builder->getProcess()->getOutput());
+        return $this->processOutput($process->getOutput());
     }
     private function processOutput($output){
-        $json = json_decode($output);
+        $json = json_decode($output,true);
         if(!isset($json['format']) && !isset($json['streams'])){
             return null;
         }

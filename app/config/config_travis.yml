@@ -2,4 +2,4 @@ imports:
     - { resource: config_test.yml }
 
 video_upload:
-    ffprobe_command: heyD
+    ffprobe_command: /usr/local/bin/ffprobe

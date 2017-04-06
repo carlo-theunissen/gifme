@@ -19,6 +19,7 @@ rm -rf *
 
 cd ../
 
+#link the files so we can set this in code
 sudo mv ffprobe /usr/local/share/ffprobe
 sudo ln -s /usr/local/share/ffprobe /usr/local/bin/ffprobe
 
