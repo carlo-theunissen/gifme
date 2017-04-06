@@ -9,8 +9,7 @@ php:
   - 5.6
 
 env:
-  - SYMFONY_VERSION=3.2.*
-  - ENVIORMENT=travis
+  - SYMFONY_VERSION=3.2.*  ENVIORMENT=travis
 
 cache:
   directories:
