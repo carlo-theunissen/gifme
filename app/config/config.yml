@@ -80,12 +80,12 @@ oneup_uploader:
 video_upload:
     ffprobe_command: DEFAULT
     accepted_formats:
-    # the active formats are tested
+    # the active formats are tested and will be recognized by ffprobe, it is not yet been tested if ffmpeg can transform them
         #- avi
         #- f4v
         #- flv
         #- m4v
-        #- webm
+        - vp9
         #- mov
         #- mp4
         #- m4a

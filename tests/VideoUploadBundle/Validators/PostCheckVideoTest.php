@@ -43,9 +43,12 @@ class PostCheckVideoTest extends AbstractTest
         foreach ($finder as $file) {
             $usedFile = new FakeFile($file);
             $response = $this->checkFile($usedFile);
-            if($response['success'] !== $shouldSucceed){
-                $this->fail($file->getPathname() . ($shouldSucceed ? ' Failed' : 'Succeeded, but shoudn\'t'));
+            if($shouldSucceed){
+                $this->assertTrue($response['success'], $file->getPathname() .' Failed');
+            } else {
+                $this->assertFalse($response['success'], $file->getPathname() .' Succeeded, but shoudn\'t');
             }
+
         }
     }
 
