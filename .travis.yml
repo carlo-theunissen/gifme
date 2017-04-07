@@ -19,6 +19,7 @@ before_script:
   - phpenv config-add custom.php.ini
   - composer selfupdate
   - composer install --dev --prefer-source
+  - npm install grunt-cli -g
 
 script: bash building/build.sh
 

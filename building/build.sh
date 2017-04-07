@@ -27,10 +27,15 @@ sudo ln -s /usr/local/share/ffprobe /usr/local/bin/ffprobe
 #reset directory
 cd ../
 
-
-
-./dependencies/ffprobe -version
+#print ffprobe version
 /usr/local/bin/ffprobe -version
+
+#Grunting :)
+cd building
+npm install
+grunt
+
+cd ../
 
 
 ##TESTS##
@@ -38,4 +43,6 @@ cd ../
 #check if ffprobe is installed
 type /usr/local/bin/ffprobe >/dev/null 2>&1 || { echo >&2 "I require /usr/local/bin/ffprobe but it's not installed.  Aborting."; exit 1; }
 
+#start unit tests for PHP
 ./vendor/bin/phpunit
+

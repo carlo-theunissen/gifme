@@ -49,3 +49,5 @@
 /uploads
 /dependencies
 /.idea
+/web/version/src/js
+/building/node_modules
