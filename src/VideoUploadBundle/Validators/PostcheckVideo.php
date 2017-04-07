@@ -15,6 +15,7 @@ class PostcheckVideo
     {
         $response = $event->getResponse();
         $info = $this->ffprobeService->getFileInfo($event->getFile()->getPathname());
+
         if(!isset($info['streams'])){
             $response['success'] = false;
             return $response;
@@ -25,7 +26,7 @@ class PostcheckVideo
 
     private function hasValidStream($streams){
         foreach($streams as &$stream){
-            if(isset($stream['codec_name']) && isset($stream['duration']) && $stream['duration'] > 0 && in_array($stream['codec_name'], $this->acceptedFormats)){
+            if(isset($stream['codec_name']) && in_array($stream['codec_name'], $this->acceptedFormats ) ){
                 return true;
             }
         }

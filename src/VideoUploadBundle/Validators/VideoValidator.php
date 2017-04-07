@@ -8,6 +8,9 @@ use Oneup\UploaderBundle\Uploader\Exception\ValidationException;
 class VideoValidator
 {
 
+    /**
+     * @param ValidationEvent $event
+     */
     public function onValidate(ValidationEvent $event)
     {
 

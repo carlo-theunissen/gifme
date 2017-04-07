@@ -1,6 +1,6 @@
 <?php
 
-namespace VideoUploadBundle\Tests\Controller;
+namespace Tests\VideoUploadBundle\DependencyInjection;
 
 use VideoUploadBundle\Tests\AbstractTest;
 
@@ -13,11 +13,11 @@ class FFProbeTest extends AbstractTest
 
     public function testFFProbeInfo(){
 
+
         $kernel = $this->GetKernel();
         $ffprobe = $this->getFFProbe($kernel);
-        $info = $ffprobe->getFileInfo($kernel->getRootDir().'/../tests/Resources/vid1.mp4');
+        $info = $ffprobe->getFileInfo($kernel->getRootDir().'/../tests/Resources/allowed/output.avi');
 
-        echo $kernel->getRootDir().'/../tests/Resources/vid1.mp4';
 
         if($info === null){
             $this->fail('Info is null');
@@ -29,7 +29,7 @@ class FFProbeTest extends AbstractTest
             return;
         }
 
-        $this->assertTrue($info['streams'][0]['codec_name'] === "h264");
+        $this->assertTrue($info['streams'][0]['codec_name'] === "mpeg4");
     }
 
     public function testFFProbeFail(){

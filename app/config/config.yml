@@ -80,27 +80,24 @@ oneup_uploader:
 video_upload:
     ffprobe_command: DEFAULT
     accepted_formats:
-        - avi
-        - cavsvideo
-        - cdxl
-        - dvd
-        - f4v
-        - flv
-        - ipod
-        - m4v
-        - webm
-        - mov
-        - mp4
-        - m4a
-        - 3gp
-        - mj2
-        - mp4
-        - mpeg
+    # the active formats are tested
+        #- avi
+        #- f4v
+        #- flv
+        #- m4v
+        #- webm
+        #- mov
+        #- mp4
+        #- m4a
+        #- mpeg
         - mpeg1video
         - mpeg2video
-        - ogg
-        - ogv
+        - mpeg4
+        #- ogg
+        #- ogv
         - h264
         - h261
-        - h263
+        #- h263
+        - flv1
+        - theora
 

@@ -9,6 +9,10 @@ class FFProbe
         $this->prefix = $prefix;
     }
 
+    /**
+     * @param $url
+     * @return json|null
+     */
     public function getFileInfo($url){
         $builder = new ProcessBuilder();
         $builder->setPrefix($this->prefix);

@@ -1,6 +1,6 @@
 <?php
 
-namespace VideoUploadBundle\Tests\Controller;
+namespace Tests\VideoUploadBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use VideoUploadBundle\Tests\AbstractTest;
