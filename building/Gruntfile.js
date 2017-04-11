@@ -6,8 +6,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         typescript: {
             base: {
-                src: ['../web/version/src/ts/**/*.ts'],
-                dest: '../web/version/src/js/',
+                src: ['../html/version/src/ts/**/*.ts'],
+                dest: '../html/version/src/js/',
                 options: {
                     sourceMap: true,
                     declaration: true
