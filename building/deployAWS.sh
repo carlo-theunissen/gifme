@@ -1,6 +1,9 @@
 #!/bin/sh
 cd /var/www
 
+#reset to head
+git checkout -- .
+
 git pull
 
 php composer.phar selfupdate

@@ -51,3 +51,7 @@
 /.idea
 /web/version/src/js
 /building/node_modules
+
+#deploytool
+/version.txt
+/html/v_*/
