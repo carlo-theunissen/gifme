@@ -6,8 +6,8 @@ git checkout -- .
 
 git pull
 
-php composer.phar selfupdate
-php composer.phar install --prefer-source
+composer selfupdate
+composer install --prefer-source
 
 bash building/build.sh
 
