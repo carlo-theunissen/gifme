@@ -27,7 +27,6 @@ class CLIS3Bucket implements IS3Bucket
         $builder = new ProcessBuilder();
         $builder->setPrefix('aws');
         $builder->setArguments(['s3', 'cp', $info->getPathname(), 's3://'.$this->bucket.'/'.$name, '--region', $this->region]);
-        echo $builder->getProcess()->getCommandLine();
         $builder->getProcess()->mustRun();
 
     }
