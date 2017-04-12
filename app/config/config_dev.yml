@@ -1,6 +1,12 @@
 imports:
     - { resource: config.yml }
+    - { resource: "@VideoUploadBundle/Resources/config/dev_services.yml"}
 
+parameters:
+    dev_bucket_access: AKIAIIHAAFZ4CZXTLF7A
+    dev_bucket_secret: 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
+    dev_bucket_name: gifcreatoruat
+    dev_bucket_region: eu-central-1
 framework:
     router:
         resource: "%kernel.root_dir%/config/routing_dev.yml"

@@ -10,3 +10,8 @@ parameters:
     mailer_user: null
     mailer_password: null
     secret: 4346318e3d2f6c38cc0db1d9038320845f9e0d33
+
+    bucket_name: gifcreatoruat
+    bucket_region: eu-central-1
+
+

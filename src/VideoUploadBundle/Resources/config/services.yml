@@ -1,4 +1,8 @@
 services:
+    video_upload.s3bucket:
+        class: VideoUploadBundle\DependencyInjection\CLIS3Bucket
+        arguments: ["%bucket_region%", "%bucket_name%"]
+
     video_upload.ffprobe:
         class: VideoUploadBundle\DependencyInjection\FFProbe
         arguments: ["%video_upload.ffprobe_command%"]
@@ -8,9 +12,13 @@ services:
         tags:
             - { name: kernel.event_listener, event: oneup_uploader.validation, method: onValidate }
 
+    video_upload.upload_handler:
+        class: VideoUploadBundle\DependencyInjection\UploadHandler
+        arguments: ["@video_upload.s3bucket"]
+
     video_upload.post_video_validator:
         class: VideoUploadBundle\Validators\PostcheckVideo
-        arguments: ["@video_upload.ffprobe", "%video_upload.accepted_formats%"]
+        arguments: ["@video_upload.ffprobe", "%video_upload.accepted_formats%", "@video_upload.upload_handler"]
         tags:
             - { name: kernel.event_listener, event: oneup_uploader.post_persist, method: onUpload }
 #    video_upload.example:

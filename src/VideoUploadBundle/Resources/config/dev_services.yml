@@ -1,0 +1,4 @@
+services:
+    video_upload.s3bucket:
+        class: VideoUploadBundle\DependencyInjection\SDKS3Bucket
+        arguments: ["%dev_bucket_region%", "%dev_bucket_access%", "%dev_bucket_secret%", "%dev_bucket_name%"]

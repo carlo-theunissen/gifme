@@ -1,0 +1,4 @@
+services:
+    video_upload.s3bucket:
+        class: VideoUploadBundle\DependencyInjection\CLIS3Bucket
+        arguments: ["%bucket_region%", "%bucket_name%"]
