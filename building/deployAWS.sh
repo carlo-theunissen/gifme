@@ -6,11 +6,7 @@ git checkout -- .
 
 git pull
 
-#set permissions so apache can execute it
-chown -R apache:apache /var/www
-sudo chmod 2775 /var/www
-find /var/www -type d -exec sudo chmod 2775 {} \;
-find /var/www -type f -exec sudo chmod 0664 {} \;
+
 
 #composer
 composer selfupdate
@@ -37,6 +33,12 @@ mv user.ini /etc/php-7.0.d/user.ini
 #set version
 rm version.txt -f
 echo v_$TIMESTAMP > version.txt
+
+#set permissions so apache can execute it
+chown -R apache:apache /var/www
+chmod 2775 /var/www
+find /var/www -type d -exec sudo chmod 2775 {} \;
+find /var/www -type f -exec sudo chmod 0664 {} \;
 
 #start the server
 sudo service httpd start
