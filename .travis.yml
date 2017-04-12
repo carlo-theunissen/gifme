@@ -14,10 +14,10 @@ cache:
     - $COMPOSER_CACHE_DIR
 
 before_script:
-  - sudo phpenv config-add user.ini
-  - sudo composer selfupdate
-  - sudo composer install --dev --prefer-source
-  - sudo npm install grunt-cli -g
+  - phpenv config-add user.ini
+  - composer selfupdate
+  - composer install --dev --prefer-source
+  - npm install grunt-cli -g
 
 script: sudo bash building/build.sh
 
