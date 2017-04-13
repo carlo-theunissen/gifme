@@ -54,3 +54,4 @@
 #deploytool
 /version.txt
 /html/v_*/
+/NodeWebsocket/node_modules
