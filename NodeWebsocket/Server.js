@@ -9,7 +9,7 @@ var http = require('http');
 var server = http.createServer(function(request, response) {
     response.end("Node.js");
 });
-server.listen(1337, function() { });
+server.listen(3001, function() { });
 
 
 
@@ -51,6 +51,7 @@ wsServer.on('request', function(request) {
 
 // Load the AWS SDK for Node.js
 var AWS = require('aws-sdk');
+AWS.config.loadFromPath('./config.json');
 
 // Create an SQS service object
 var sqs = new AWS.SQS({apiVersion: '2012-11-05'});
