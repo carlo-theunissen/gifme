@@ -54,22 +54,15 @@ AWS.config.loadFromPath('./config.json');
 
 // Create an SQS service object
 var sqs = new AWS.SQS({apiVersion: '2012-11-05'});
-
-while(true) {
+setInterval(function(){
     sqs.receiveMessage({
         QueueUrl: "https://sqs.eu-central-1.amazonaws.com/685756058443/UAT_GifCreator_Gifs",
-        WaitTimeSeconds: 20,
-        MaxNumberOfMessages: 1
+        WaitTimeSeconds: 20
     }, function (err, data) {
         // If there are any messages to get
         if (data.Messages) {
             console.log(data.Messages);
         }
     });
-}
+}, 21000);
 
-setInterval(function(){
-    clients.forEach(function(client){
-        client.connection.sendUTF("GELUKT! ");
-    });
-}, 100);
