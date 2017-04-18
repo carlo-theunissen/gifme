@@ -7,6 +7,7 @@
 var WebSocketServer = require('websocket').server;
 var http = require('http');
 var server = http.createServer(function(request, response) {
+    response.end("Node.js");
 });
 server.listen(1337, function() { });
 
@@ -47,22 +48,24 @@ wsServer.on('request', function(request) {
     });
 });
 
+/*
 // Load the AWS SDK for Node.js
 var AWS = require('aws-sdk');
-// Load credentials and set the region from the JSON file
-AWS.config.loadFromPath('./config.json');
 
 // Create an SQS service object
 var sqs = new AWS.SQS({apiVersion: '2012-11-05'});
-setInterval(function(){
+function readMessages(){
     sqs.receiveMessage({
         QueueUrl: "https://sqs.eu-central-1.amazonaws.com/685756058443/UAT_GifCreator_Gifs",
         WaitTimeSeconds: 20
     }, function (err, data) {
-        // If there are any messages to get
-        if (data.Messages) {
-            console.log(data.Messages);
+        if(data !== null) {
+            // If there are any messages to get
+            if (data.Messages) {
+                console.log(data.Messages);
+            }
         }
+        readMessages();
     });
-}, 21000);
-
+}
+*/
