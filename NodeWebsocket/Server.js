@@ -48,7 +48,7 @@ wsServer.on('request', function(request) {
     });
 });
 
-/*
+
 // Load the AWS SDK for Node.js
 var AWS = require('aws-sdk');
 
@@ -68,4 +68,5 @@ function readMessages(){
         readMessages();
     });
 }
-*/
+
+readMessages();
