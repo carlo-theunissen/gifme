@@ -9,6 +9,7 @@ yum -y install nodejs
 
 #install grunt
 npm install grunt-cli -g
+npm install forever -g
 
 #install composer
 sudo curl -sS https://getcomposer.org/installer | sudo php

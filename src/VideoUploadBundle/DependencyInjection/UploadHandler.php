@@ -21,9 +21,9 @@ class UploadHandler
     public function __construct( IS3Bucket $bucket){
         $this->bucket = $bucket;
     }
-    public function uploadToS3(File $file){
+    public function uploadToS3(File $file, $name){
         //TODO: connect to database and store the name
-        $this->bucket->UploadToBucket($file, "offered/".rand().'.'.$file->getExtension());
+        $this->bucket->UploadToBucket($file, "offered/".$name);
     }
 
 }

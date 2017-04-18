@@ -24,6 +24,7 @@ var clients = [ ];
 wsServer.on('request', function(request) {
     var connection = request.accept(null, request.origin);
     var index = - 1;
+
     // This is the most important callback for us, we'll handle
     // all messages from users here.
     connection.on('message', function(message) {
