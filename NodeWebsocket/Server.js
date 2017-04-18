@@ -3,7 +3,7 @@
  * This is a really simple application
  * It listens to the SQS from amazon and lets users known when an SQS has happened
  */
-
+var sqsUrl = "https://sqs.eu-central-1.amazonaws.com/685756058443/UAT_GifCreator_Gifs";
 var WebSocketServer = require('websocket').server;
 var http = require('http');
 var server = http.createServer(function(request, response) {
@@ -71,7 +71,7 @@ function broadcastCreatedImage(key){
 var sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 function readMessages(){
     sqs.receiveMessage({
-        QueueUrl: "https://sqs.eu-central-1.amazonaws.com/685756058443/UAT_GifCreator_Gifs",
+        QueueUrl: sqsUrl,
         WaitTimeSeconds: 20
     }, function (err, data) {
         if(data !== null && data.Messages) {
@@ -79,6 +79,13 @@ function readMessages(){
 
                 var body = JSON.parse(data.Messages[i].Body);
                 broadcastCreatedImage(body.Records[0].s3.object.key);
+
+                var deleteParams = {
+                    QueueUrl: sqsUrl,
+                    ReceiptHandle: data.Messages[i].ReceiptHandle
+                };
+
+                sqs.deleteMessage(deleteParams, function(err, data) { });
             }
         }
         readMessages();
