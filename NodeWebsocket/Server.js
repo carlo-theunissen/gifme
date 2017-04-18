@@ -7,7 +7,6 @@
 var WebSocketServer = require('websocket').server;
 var http = require('http');
 var server = http.createServer(function(request, response) {
-    response.end("Node.js");
 });
 server.listen(3001, function() { });
 
@@ -53,6 +52,18 @@ wsServer.on('request', function(request) {
 var AWS = require('aws-sdk');
 AWS.config.loadFromPath('./config.json');
 
+function broadcastCreatedImage(key){
+    const regex = /.*\/(\d+)\./g;
+    var result = regex.exec(key);
+    if(result.length > 0) {
+        for (var i = 0; i < clients.length; i++) {
+            if (clients[i].find === result[1] || clients[i].find === 'all') {
+                clients[i].connection.sendUTF(key);
+            }
+        }
+    }
+}
+
 // Create an SQS service object
 var sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 function readMessages(){
@@ -60,10 +71,10 @@ function readMessages(){
         QueueUrl: "https://sqs.eu-central-1.amazonaws.com/685756058443/UAT_GifCreator_Gifs",
         WaitTimeSeconds: 20
     }, function (err, data) {
-        if(data !== null) {
-            // If there are any messages to get
-            if (data.Messages) {
-                console.log(data.Messages);
+        if(data !== null && data.Messages !== null) {
+            for(var i =0; i< data.Messages.length; i++ ){
+                var body = JSON.parse(data.Messages[i][0].Body);
+                broadcastCreatedImage(body.Records[0].s3.object.key);
             }
         }
         readMessages();
