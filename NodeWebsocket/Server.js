@@ -58,7 +58,7 @@ AWS.config.loadFromPath('./config.json');
 function broadcastCreatedImage(key){
     const regex = /.*\/(\d+)\./g;
     var result = regex.exec(key);
-    if(result.length > 0) {
+    if(result && result.length > 0) {
         for (var i = 0; i < clients.length; i++) {
             if (clients[i].find === result[1] || clients[i].find === 'all') {
                 clients[i].connection.sendUTF(key);
