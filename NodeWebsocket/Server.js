@@ -71,7 +71,7 @@ function readMessages(){
         QueueUrl: "https://sqs.eu-central-1.amazonaws.com/685756058443/UAT_GifCreator_Gifs",
         WaitTimeSeconds: 20
     }, function (err, data) {
-        if(data !== null && data.Messages !== null) {
+        if(data !== null && data.Messages) {
             for(var i =0; i< data.Messages.length; i++ ){
                 var body = JSON.parse(data.Messages[i][0].Body);
                 broadcastCreatedImage(body.Records[0].s3.object.key);
