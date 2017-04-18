@@ -32,6 +32,9 @@ wsServer.on('request', function(request) {
 
             if (regex.exec(message.utf8Data) !== null) { //only allow numbers or the word "all"
                 console.log("Client want "+ message.utf8Data);
+                if(index > 0){
+                    clients.splice(index, 1);
+                }
                 index = clients.push({
                     connection: connection,
                     find: message.utf8Data
@@ -73,7 +76,8 @@ function readMessages(){
     }, function (err, data) {
         if(data !== null && data.Messages) {
             for(var i =0; i< data.Messages.length; i++ ){
-                var body = JSON.parse(data.Messages[i][0].Body);
+
+                var body = JSON.parse(data.Messages[i].Body);
                 broadcastCreatedImage(body.Records[0].s3.object.key);
             }
         }
