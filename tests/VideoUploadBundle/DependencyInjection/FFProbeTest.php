@@ -16,7 +16,7 @@ class FFProbeTest extends AbstractTest
 
         $kernel = $this->GetKernel();
         $ffprobe = $this->getFFProbe($kernel);
-        $info = $ffprobe->getFileInfo($kernel->getRootDir().'/../tests/Resources/allowed/output.avi');
+        $info = $ffprobe->getFileInfo($kernel->getRootDir().'/../tests/Resources/allowed/travis.avi');
 
 
         if($info === null){

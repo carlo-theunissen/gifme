@@ -1,5 +1,5 @@
 imports:
-    - { resource: config_test.yml }
+    - { resource: config_test_dev.yml }
 
 video_upload:
     ffprobe_command: /usr/local/bin/ffprobe

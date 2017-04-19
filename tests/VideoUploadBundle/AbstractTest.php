@@ -24,7 +24,7 @@ abstract class AbstractTest extends WebTestCase
 
     private function getSettings(){
 		return array(
-            'environment' => getenv("ENVIORMENT")?: 'test'
+            'environment' => 'test_' . (getenv("ENVIORMENT")?: 'dev')
         );
     }
 

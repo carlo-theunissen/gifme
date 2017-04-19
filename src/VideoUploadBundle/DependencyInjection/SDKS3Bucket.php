@@ -32,12 +32,12 @@ class SDKS3Bucket implements IS3Bucket
         $this->bucket = $bucket;
     }
 
-    public function UploadToBucket(File $info, $name)
+    public function UploadToBucket(FileInterface $info, $name)
     {
         $this->s3Client->putObject(array(
             'Bucket'       => $this->bucket,
             'Key'          => $name,
-            'SourceFile'   => $info->getRealPath(),
+            'SourceFile'   => $info->getPathname(),
             'ContentType'  => $info->getMimeType(),
             'ACL'          => 'bucket-owner-full-control',
         ));

@@ -9,6 +9,7 @@
 namespace VideoUploadBundle\DependencyInjection;
 
 
+use Oneup\UploaderBundle\Uploader\File\FileInterface;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Process\ProcessBuilder;
 use VideoUploadBundle\Interfaces\IS3Bucket;
@@ -22,7 +23,7 @@ class CLIS3Bucket implements IS3Bucket
         $this->bucket = $bucket;
     }
 
-    public function UploadToBucket(File $info, $name)
+    public function UploadToBucket(FileInterface $info, $name)
     {
         $builder = new ProcessBuilder();
         $builder->setPrefix('aws');

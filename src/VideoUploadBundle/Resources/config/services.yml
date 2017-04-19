@@ -13,7 +13,7 @@ services:
             - { name: kernel.event_listener, event: oneup_uploader.validation, method: onValidate }
 
     video_upload.upload_handler:
-        class: VideoUploadBundle\DependencyInjection\UploadHandler
+        class: VideoUploadBundle\DependencyInjection\S3UploadHandler
         arguments: ["@video_upload.s3bucket"]
 
     video_upload.post_video_validator:
