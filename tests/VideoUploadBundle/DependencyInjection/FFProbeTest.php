@@ -11,6 +11,10 @@ class FFProbeTest extends AbstractTest
 
     }
 
+    /**
+     * @group travis
+     * @group dev
+     */
     public function testFFProbeInfo(){
 
 
@@ -25,7 +29,7 @@ class FFProbeTest extends AbstractTest
         }
 
         if(!isset($info['streams'][0]['codec_name'])){
-            $this->fail('Coded is not provided');
+            $this->fail('Codec is not provided');
             return;
         }
 

@@ -44,5 +44,5 @@ cd ../
 type /usr/local/bin/ffprobe >/dev/null 2>&1 || { echo >&2 "I require /usr/local/bin/ffprobe but it's not installed.  Aborting."; exit 1; }
 
 #start unit tests for PHP
-./vendor/bin/phpunit
+./vendor/bin/phpunit --group $ENVIORMENT
 

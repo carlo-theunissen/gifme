@@ -20,7 +20,10 @@ use VideoUploadBundle\Tests\AbstractTest;
 class PostCheckVideoTest extends AbstractTest
 {
 
-
+    /**
+     * @group travis
+     * @group dev
+     */
     public function testCorrectFiles(){
 
         $kernel = $this->GetKernel();
@@ -28,7 +31,10 @@ class PostCheckVideoTest extends AbstractTest
 
     }
 
-
+    /**
+     * @group travis
+     * @group dev
+     */
     public function testFailFiles(){
 
         $kernel = $this->GetKernel();
