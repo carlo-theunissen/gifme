@@ -30,6 +30,7 @@ zip -r $TIMESTAMP.zip \
     ./building/BeforeInstall.sh \
     ./building/user.ini \
     ./html/* \
+    ./html/.htaccess \
     ./src/* \
     ./composer.json \
     ./composer.lock \
