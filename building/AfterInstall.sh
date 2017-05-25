@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 #install everything with composer
-composer install -d /var/www/
+sudo composer install --no-plugins --no-scripts -d  /var/www/

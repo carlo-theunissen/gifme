@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #install apache with php
-sudo yum install -y httpd24 php70 php70-mbstring
+sudo yum install -y httpd24 php70 php70-mbstring php70-pdo php70-mysqli
 
 #install composer
 sudo curl -sS https://getcomposer.org/installer | sudo php
@@ -15,4 +15,4 @@ export ENVIORMENT=uat
 sudo service httpd stop
 
 #remove old content, except "vendor"
-find /var/www/* ! -name 'vendor' -type d -exec rm -fr {} +
+sudo find /var/www/* ! -name 'vendor' -type d -exec rm -fr {} +
