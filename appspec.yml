@@ -14,7 +14,7 @@ files:
   - source: ./building/user.ini #the custom user.ini
     destination: /etc/php-7.0.d/
   - source: ./building/user.conf #the custom user.ini
-    destination: /etc/httpd/conf.d/httpd.conf
+    destination: /etc/httpd/conf/httpd.conf
 
 permissions:
   #permissions are set in the ApplicationStart hook
