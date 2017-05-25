@@ -19,4 +19,7 @@ mv /var/www/vendor /var/temp
 rm -rf /var/www
 mkdir www
 mv /var/temp /var/www/vendor
+
+#remove old httpd.conf
+rm -f /etc/httpd/conf/httpd.conf
 exit 0
