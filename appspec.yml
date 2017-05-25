@@ -21,12 +21,12 @@ hooks:
    BeforeInstall:
      - location: building/BeforeInstall.sh
        timeout: 300 #5 minutes
-       runas: sudo
+       runas: root
    AfterInstall:
       - location: building/AfterInstall.sh
         timeout: 300 #5 minutes
-        runas: sudo
+        runas: root
    ApplicationStart:
      - location: building/ApplicationStart.sh
        timeout: 60 #1 minute
-       runas: sudo
+       runas: root
