@@ -45,4 +45,4 @@ rm -f $TIMESTAMP.zip
 aws deploy create-deployment \
  --application-name gifcreator_uat \
  --deployment-group-name php \
- --s3-location bucket=gifcreatoruat,bundleType=zip,key=/deploy/1495743007.zip --region us-east-1
+ --s3-location bucket=gifcreatoruat,bundleType=zip,key=deploy/1495743007.zip --region us-east-1

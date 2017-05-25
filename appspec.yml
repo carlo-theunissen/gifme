@@ -25,6 +25,7 @@ hooks:
    AfterInstall:
       - location: building/AfterInstall.sh
         timeout: 300 #5 minutes
+        runas: sudo
    ApplicationStart:
      - location: building/ApplicationStart.sh
        timeout: 60 #1 minute
