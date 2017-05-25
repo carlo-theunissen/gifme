@@ -29,6 +29,7 @@ zip -r $TIMESTAMP.zip \
     ./building/ApplicationStart.sh \
     ./building/BeforeInstall.sh \
     ./building/user.ini \
+    ./building/user.conf \
     ./html/* \
     ./html/.htaccess \
     ./src/* \
