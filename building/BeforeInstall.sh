@@ -15,4 +15,7 @@ export ENVIORMENT=uat
 service httpd stop
 
 #remove old content, except "vendor"
-find /var/www/* ! -name 'vendor' -type d -exec rm -fr {} +
+mv /var/www/vendor /var/temp
+rm -rf /var/www
+mkdir www
+mv /var/temp /var/www/vendor
