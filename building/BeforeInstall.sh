@@ -12,10 +12,11 @@ ln -s /usr/local/bin/composer /usr/bin/composer
 export ENVIORMENT=uat
 
 #stop the server
-service httpd stop
+service httpd sto
 
 #remove old content, except "vendor"
 mv /var/www/vendor /var/temp
 rm -rf /var/www
 mkdir www
 mv /var/temp /var/www/vendor
+exit 0
