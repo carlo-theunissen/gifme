@@ -1,0 +1,15 @@
+imports:
+    - { resource: config_dev.yml }
+    - { resource: config_test.yml }
+    - { resource: "@VideoUploadBundle/Resources/config/uat_services.yml"}
+
+#database is only accessible through the ec2 instance
+parameters:
+    database_host: gifcreatoruat.ctjzq07scd8i.eu-central-1.rds.amazonaws.com
+    database_port: 3306
+    database_name: uat
+    database_user: carlo
+    database_password: gifcreatoruat-Adsafsa123!12SD#$
+
+video_upload:
+    ffprobe_command: /usr/local/bin/ffprobe

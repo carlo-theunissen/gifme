@@ -28,6 +28,16 @@ class FakeFile implements FileInterface
             $this->extension = $finderFile->getExtension();
         }
     }
+    public static function copy(FileInterface $file){
+        $fake = new FakeFile();
+        $fake->setPathname($fake->getPathname());
+        $fake->setSize($file->getSize());
+        $fake->setPath($file->getPath());
+        $fake->setBasename($file->getBasename());
+        $fake->setExtension($file->getExtension());
+        $fake->setMimeType($fake->getMimeType());
+        return $fake;
+    }
 
     /**
      * @param int $size

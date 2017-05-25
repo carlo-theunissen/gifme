@@ -1,5 +1,6 @@
 <?php
 namespace VideoUploadBundle\Interfaces;
+use Oneup\UploaderBundle\Uploader\File\FileInterface;
 use Symfony\Component\HttpFoundation\File\File;
 
 /**
@@ -10,5 +11,5 @@ use Symfony\Component\HttpFoundation\File\File;
  */
 interface IS3Bucket
 {
-    public function UploadToBucket(File $info, $name);
+    public function UploadToBucket(FileInterface $info, $name);
 }

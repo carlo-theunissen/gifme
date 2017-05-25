@@ -11,12 +11,16 @@ class FFProbeTest extends AbstractTest
 
     }
 
+    /**
+     * @group travis
+     * @group dev
+     */
     public function testFFProbeInfo(){
 
 
         $kernel = $this->GetKernel();
         $ffprobe = $this->getFFProbe($kernel);
-        $info = $ffprobe->getFileInfo($kernel->getRootDir().'/../tests/Resources/allowed/output.avi');
+        $info = $ffprobe->getFileInfo($kernel->getRootDir().'/../tests/Resources/allowed/travis.avi');
 
 
         if($info === null){
@@ -25,7 +29,7 @@ class FFProbeTest extends AbstractTest
         }
 
         if(!isset($info['streams'][0]['codec_name'])){
-            $this->fail('Coded is not provided');
+            $this->fail('Codec is not provided');
             return;
         }
 

@@ -9,10 +9,11 @@
 namespace VideoUploadBundle\DependencyInjection;
 
 
-use Symfony\Component\HttpFoundation\File\File;
+use Oneup\UploaderBundle\Uploader\File\FileInterface;
 use VideoUploadBundle\Interfaces\IS3Bucket;
+use VideoUploadBundle\Interfaces\IUploadHelper;
 
-class UploadHandler
+class S3UploadHandler implements IUploadHelper
 {
     /**
      * @var IS3Bucket
@@ -21,9 +22,9 @@ class UploadHandler
     public function __construct( IS3Bucket $bucket){
         $this->bucket = $bucket;
     }
-    public function uploadToS3(File $file){
+    public function upload(FileInterface $file, $name){
         //TODO: connect to database and store the name
-       // $this->bucket->UploadToBucket($file, "offered/".rand().'.'.$file->getExtension());
+        $this->bucket->UploadToBucket($file, "offered/".$name);
     }
 
 }

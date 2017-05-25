@@ -18,7 +18,10 @@ use VideoUploadBundle\Validators\VideoValidator;
 
 class VideoValidatorTest extends AbstractTest
 {
-
+    /**
+     * @group travis
+     * @group dev
+     */
     public function testCorrectSize(){
 
 
@@ -29,6 +32,10 @@ class VideoValidatorTest extends AbstractTest
 
     }
 
+    /**
+     * @group travis
+     * @group dev
+     */
     public function testWrongSize(){
         $this->expectException(ValidationException::class);
         $file = new FakeFile();
@@ -37,6 +44,10 @@ class VideoValidatorTest extends AbstractTest
         $this->checkValidation($file);
     }
 
+    /**
+     * @group travis
+     * @group dev
+     */
     private function checkValidation(FileInterface $file){
         $event = new ValidationEvent($file, new Request(), [], '');
 
