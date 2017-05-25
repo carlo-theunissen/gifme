@@ -16,7 +16,7 @@ cache:
     - $COMPOSER_CACHE_DIR
 
 before_script:
-  - phpenv config-add user.ini
+  - phpenv config-add building/user.ini
   - composer selfupdate
   - composer install --dev --prefer-source
   - npm install grunt-cli -g

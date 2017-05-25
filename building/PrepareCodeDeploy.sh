@@ -36,7 +36,7 @@ zip -r $TIMESTAMP.zip \
     ./appspec.yml
 
 #send to s3
-aws s3 cp $TIMESTAMP.zip s3://gifcreatoruat/deploy/$TIMESTAMP.zip
+aws s3 cp $TIMESTAMP.zip s3://gifcreatoruat/deploy/$TIMESTAMP.zip --region eu-central-1
 
 #delete made zip
 rm -f $TIMESTAMP.zip

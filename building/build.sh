@@ -30,13 +30,6 @@ cd ../
 #print ffprobe version
 /usr/local/bin/ffprobe -version
 
-#Grunting :)
-cd building
-npm install
-grunt
-
-cd ../
-
 
 ##TESTS##
 
