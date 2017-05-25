@@ -22,7 +22,7 @@ permissions:
 hooks:
    BeforeInstall:
      - location: building/BeforeInstall.sh
-       timeout: 300 #5 minutes
+       timeout: 600 #10 minutes
        runas: root
    AfterInstall:
       - location: building/AfterInstall.sh
