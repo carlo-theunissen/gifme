@@ -23,7 +23,7 @@ class UploadHandler
     }
     public function uploadToS3(File $file){
         //TODO: connect to database and store the name
-        $this->bucket->UploadToBucket($file, "offered/".rand().'.'.$file->getExtension());
+       // $this->bucket->UploadToBucket($file, "offered/".rand().'.'.$file->getExtension());
     }
 
 }

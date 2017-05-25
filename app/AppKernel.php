@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new VideoUploadBundle\VideoUploadBundle(),
 			new Oneup\UploaderBundle\OneupUploaderBundle(),
+            new ApiBundle\ApiBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test', 'travis'], true)) {

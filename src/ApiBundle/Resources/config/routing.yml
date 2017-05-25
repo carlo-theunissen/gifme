@@ -1,0 +1,3 @@
+api_users:
+    path:     /gifs
+    defaults: { _controller: ApiBundle:Gif:select }

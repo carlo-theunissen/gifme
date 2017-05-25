@@ -1,0 +1,31 @@
+version: 0.0
+os: linux
+files:
+  - source: ./app
+    destination: /var/www/app
+  - source: ./html
+    destination: /var/www/html
+  - source: ./src
+    destination: /var/www/src
+  - source: ./composer.lock
+    destination: /var/www/
+  - source: ./composer.json
+    destination: /var/www/
+  - source: ./building/user.ini #the custom user.ini
+    destination: /etc/php-7.0.d/
+
+permissions:
+  #permissions are set in the ApplicationStart hook
+
+hooks:
+   BeforeInstall:
+     - location: building/BeforeInstall.sh
+       timeout: 300 #5 minutes
+       runas: sudo
+   AfterInstall:
+      - location: building/AfterInstall.sh
+        timeout: 300 #5 minutes
+   ApplicationStart:
+     - location: building/ApplicationStart.sh
+       timeout: 60 #1 minute
+       runas: sudo

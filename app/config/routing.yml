@@ -1,3 +1,7 @@
+api:
+    resource: "@ApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
 video_upload:
     resource: "@VideoUploadBundle/Resources/config/routing.yml"
     prefix:   /

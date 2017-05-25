@@ -20,6 +20,7 @@ export ENVIORMENT=uat
 
 #set git
 sudo yum install git
+
 #ssh-keygen TODO
 #ssh-agent /bin/bash
 #ssh-add ~/.ssh/id_rsa

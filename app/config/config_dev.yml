@@ -19,7 +19,7 @@ web_profiler:
     intercept_redirects: false
 
 video_upload:
-    ffprobe_command: C:\Users\carlo\Downloads\ffprobe.exe
+    ffprobe_command: /Applications/MAMP/htdocs/ffmpeg/ffprobe
 
 monolog:
     handlers:
