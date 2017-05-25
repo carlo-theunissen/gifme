@@ -13,6 +13,8 @@ files:
     destination: /var/www/
   - source: ./building/user.ini #the custom user.ini
     destination: /etc/php-7.0.d/
+  - source: ./building/user.conf #the custom user.ini
+    destination: /etc/httpd/conf.d/
 
 permissions:
   #permissions are set in the ApplicationStart hook
