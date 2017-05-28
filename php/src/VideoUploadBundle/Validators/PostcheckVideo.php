@@ -48,7 +48,7 @@ class PostcheckVideo
         return $name;
     }
 
-    private function removeFile(FileInterface $file){
+    private function removeFile(File $file){
         gc_collect_cycles(); //yep this is needed otherwise it won't work
 
         //use the rm command because we don't have the rights to delete it through php.
