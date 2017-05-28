@@ -21,7 +21,8 @@ zip -r $TIMESTAMP.zip \
     ./src/* \
     ./composer.json \
     ./composer.lock \
-    ./appspec.yml
+    ./appspec.yml \
+    ./bin/*
 
 #send to s3
 aws s3 cp $TIMESTAMP.zip s3://gifcreatoruat/deploy/$TIMESTAMP.zip --region eu-central-1
