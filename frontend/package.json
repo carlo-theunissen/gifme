@@ -23,12 +23,9 @@
     "vue-class-component": "^5.0.1",
     "vue-router": "^2.3.1",
     "vue-ts-loader": "0.0.3",
-    "vue-upload-component": "^2.3.2"
-  },
-  "devDependencies": {
+    "vue-upload-component": "^2.3.2",
     "@types/chai": "^3.5.2",
     "@types/mocha": "^2.2.41",
-    "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
