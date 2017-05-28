@@ -384,3 +384,5 @@
 [2017-05-28 17:51:05] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2017-05-28 17:52:14] request.INFO: Matched route "api_gifs". {"route":"api_gifs","route_parameters":{"_controller":"ApiBundle\\Controller\\GifController::selectAction","_route":"api_gifs"},"request_uri":"http://localhost:8888/gifcreator/php/html/app_dev.php/api/gifs","method":"GET"} []
 [2017-05-28 17:52:14] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2017-05-28 17:58:58] request.INFO: Matched route "api_gifs". {"route":"api_gifs","route_parameters":{"_controller":"ApiBundle\\Controller\\GifController::selectAction","_route":"api_gifs"},"request_uri":"http://localhost:8888/gifcreator/php/html/app_dev.php/api/gifs","method":"GET"} []
+[2017-05-28 17:58:58] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
