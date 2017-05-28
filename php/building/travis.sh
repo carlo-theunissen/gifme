@@ -30,6 +30,10 @@ cd ../
 #print ffprobe version
 /usr/local/bin/ffprobe -version
 
+#go inside the php folder
+cd php
+
+composer install --dev --prefer-source
 
 ##TESTS##
 
@@ -37,5 +41,7 @@ cd ../
 type /usr/local/bin/ffprobe >/dev/null 2>&1 || { echo >&2 "I require /usr/local/bin/ffprobe but it's not installed.  Aborting."; exit 1; }
 
 #start unit tests for PHP
-./php/vendor/bin/phpunit --group $ENVIORMENT
+vendor/bin/phpunit --group $ENVIORMENT
 
+#reset directory
+cd ../

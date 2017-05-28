@@ -18,7 +18,6 @@ cache:
 before_script:
   - phpenv config-add php/_deploy/user.ini
   - composer selfupdate
-  - composer install --dev --prefer-source
   - npm install grunt-cli -g
 
 script: bash php/_deploy/travis.sh
