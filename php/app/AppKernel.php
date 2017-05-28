@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new VideoUploadBundle\VideoUploadBundle(),
 			new Oneup\UploaderBundle\OneupUploaderBundle(),
             new ApiBundle\ApiBundle(),
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test_dev','test_uat', 'test_travis'], true)) {

@@ -29,6 +29,7 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'Nelmio\\CorsBundle\\' => array($vendorDir . '/nelmio/cors-bundle'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'JmesPath\\' => array($vendorDir . '/mtdowling/jmespath.php/src'),
     'Incenteev\\ParameterHandler\\' => array($vendorDir . '/incenteev/composer-parameter-handler'),

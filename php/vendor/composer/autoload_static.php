@@ -61,6 +61,10 @@ class ComposerStaticInit73862c87c25ec4570f8bbfaacb1a9ff9
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Cache\\' => 10,
         ),
+        'N' => 
+        array (
+            'Nelmio\\CorsBundle\\' => 18,
+        ),
         'M' => 
         array (
             'Monolog\\' => 8,
@@ -188,6 +192,10 @@ class ComposerStaticInit73862c87c25ec4570f8bbfaacb1a9ff9
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Nelmio\\CorsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nelmio/cors-bundle',
         ),
         'Monolog\\' => 
         array (
