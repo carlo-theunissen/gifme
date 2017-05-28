@@ -1,7 +1,7 @@
 /**
  * Created by carlotheunissen on 16/05/2017.
  */
-let frontController = "gifcreator-1835133625.us-east-1.elb.amazonaws.com/"; //frontcontroller
+let frontController = "http://gifcreator-1835133625.us-east-1.elb.amazonaws.com/"; //frontcontroller
 
 export default {
     fileUpload : frontController + "_uploader/gallery/upload",
