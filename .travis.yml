@@ -16,12 +16,12 @@ cache:
     - $COMPOSER_CACHE_DIR
 
 before_script:
-  - phpenv config-add building/user.ini
+  - phpenv config-add php/_deploy/user.ini
   - composer selfupdate
   - composer install --dev --prefer-source
   - npm install grunt-cli -g
 
-script: bash php/building/travis.sh
+script: bash php/_deploy/travis.sh
 
 notifications:
   email:

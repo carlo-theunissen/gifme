@@ -11,9 +11,9 @@ files:
     destination: /var/www/
   - source: ./composer.json
     destination: /var/www/
-  - source: ./building/user.ini #the custom user.ini
+  - source: ./_deploy/user.ini #the custom user.ini
     destination: /etc/php-7.0.d/
-  - source: ./building/httpd.conf #the custom user.ini
+  - source: ./_deploy/httpd.conf #the custom user.ini
     destination: /etc/httpd/conf/
 
 permissions:
@@ -21,14 +21,14 @@ permissions:
 
 hooks:
    BeforeInstall:
-     - location: building/BeforeInstall.sh
+     - location: _deploy/BeforeInstall.sh
        timeout: 600 #10 minutes
        runas: root
    AfterInstall:
-      - location: building/AfterInstall.sh
+      - location: _deploy/AfterInstall.sh
         timeout: 300 #5 minutes
         runas: root
    ApplicationStart:
-     - location: building/ApplicationStart.sh
+     - location: _deploy/ApplicationStart.sh
        timeout: 60 #1 minute
        runas: root
