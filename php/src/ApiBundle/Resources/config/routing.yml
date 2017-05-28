@@ -1,0 +1,15 @@
+api_gifs:
+    path:     /gifs
+    defaults: { _controller: ApiBundle:Gif:select }
+
+api_tags:
+    path:     /tags
+    defaults: { _controller: ApiBundle:Tag:selectAll }
+
+api_formats:
+    path:     /video/formats
+    defaults: { _controller: ApiBundle:Video:selectAcceptedFormats }
+
+api_file_size:
+    path:     /video/filesize
+    defaults: { _controller: ApiBundle:Video:selectMaxFileSize }
