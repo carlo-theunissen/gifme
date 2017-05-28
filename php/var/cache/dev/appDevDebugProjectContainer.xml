@@ -490,8 +490,11 @@
       <parameter key="gallery">33554432</parameter>
     </parameter>
     <parameter key="nelmio_cors.map" type="collection">
-      <parameter key="^/.*" type="collection">
-        <parameter key="allow_origin">true</parameter>
+      <parameter key="^/" type="collection">
+        <parameter key="origin_regex">true</parameter>
+        <parameter key="allow_origin" type="collection">
+          <parameter>^http://gifcreatoruat-hosting.s3-website-us-east-1.amazonaws.com</parameter>
+        </parameter>
         <parameter key="allow_headers">true</parameter>
         <parameter key="allow_methods" type="collection">
           <parameter>POST</parameter>
@@ -677,7 +680,7 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>eudtYNxbn4</argument>
                 <argument>0</argument>
-                <argument>pxpBzfZYQcyDV79BMVfQ7j</argument>
+                <argument>xrUqeP88m1xGg9gKHtBA2i</argument>
                 <argument>/Applications/MAMP/htdocs/gifcreator/php/var/cache/dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -860,7 +863,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>fPdl-rFkKF</argument>
       <argument>0</argument>
-      <argument>pxpBzfZYQcyDV79BMVfQ7j</argument>
+      <argument>xrUqeP88m1xGg9gKHtBA2i</argument>
       <argument>/Applications/MAMP/htdocs/gifcreator/php/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -870,7 +873,7 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>npjT1bCTd2</argument>
       <argument>0</argument>
-      <argument>pxpBzfZYQcyDV79BMVfQ7j</argument>
+      <argument>xrUqeP88m1xGg9gKHtBA2i</argument>
       <argument>/Applications/MAMP/htdocs/gifcreator/php/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1914,7 +1917,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>592af3c17e5606.28510814</argument>
+            <argument>592af5c36a6783.32517409</argument>
           </service>
         </argument>
       </argument>
@@ -2062,7 +2065,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>592af3c17e5606.28510814</argument>
+            <argument>592af5c36a6783.32517409</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2755,8 +2758,11 @@
     <service id="nelmio_cors.options_provider.config" class="Nelmio\CorsBundle\Options\ConfigProvider">
       <tag name="nelmio_cors.options_provider" priority="-1"/>
       <argument type="collection">
-        <argument key="^/.*" type="collection">
-          <argument key="allow_origin">true</argument>
+        <argument key="^/" type="collection">
+          <argument key="origin_regex">true</argument>
+          <argument key="allow_origin" type="collection">
+            <argument>^http://gifcreatoruat-hosting.s3-website-us-east-1.amazonaws.com</argument>
+          </argument>
           <argument key="allow_headers">true</argument>
           <argument key="allow_methods" type="collection">
             <argument>POST</argument>
