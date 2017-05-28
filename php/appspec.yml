@@ -7,8 +7,8 @@ files:
     destination: /var/www/html
   - source: ./src
     destination: /var/www/src
-  - source: ./bin
-    destination: /var/www/bin
+  - source: ./bin/console
+    destination: /var/www/app/console
   - source: ./composer.lock
     destination: /var/www/
   - source: ./composer.json
