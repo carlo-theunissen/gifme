@@ -79,7 +79,7 @@ oneup_uploader:
                 directory: "%kernel.root_dir%/../uploads/"
 
 video_upload:
-    ffprobe_command: DEFAULT
+    ffprobe_command: /usr/local/bin/ffprobe
     max_file_size: 20
     accepted_formats:
     # the active formats are tested and will be recognized by ffprobe, it is not been tested yet if ffmpeg can transform them

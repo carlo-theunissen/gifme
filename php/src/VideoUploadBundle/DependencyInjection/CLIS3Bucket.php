@@ -23,7 +23,7 @@ class CLIS3Bucket implements IS3Bucket
         $this->bucket = $bucket;
     }
 
-    public function UploadToBucket(FileInterface $info, $name)
+    public function UploadToBucket(File $info, $name)
     {
         $builder = new ProcessBuilder();
         $builder->setPrefix('aws');

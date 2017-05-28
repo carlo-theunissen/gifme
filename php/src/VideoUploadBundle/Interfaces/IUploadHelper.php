@@ -10,8 +10,9 @@ namespace VideoUploadBundle\Interfaces;
 
 
 use Oneup\UploaderBundle\Uploader\File\FileInterface;
+use Symfony\Component\HttpFoundation\File\File;
 
 interface IUploadHelper
 {
-    public function upload(FileInterface $file, $newName);
+    public function upload(File $file, $newName);
 }

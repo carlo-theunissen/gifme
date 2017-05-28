@@ -42,7 +42,7 @@ class PostcheckVideo
      * @param File $file
      * @return int
      */
-    private function handleUpload(FileInterface $file){
+    private function handleUpload(File $file){
         $name = time() + mt_rand();
         $this->uploadHandler->upload($file, $name . '.'. $file->getExtension());
         return $name;

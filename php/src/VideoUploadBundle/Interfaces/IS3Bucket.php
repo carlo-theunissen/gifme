@@ -11,5 +11,5 @@ use Symfony\Component\HttpFoundation\File\File;
  */
 interface IS3Bucket
 {
-    public function UploadToBucket(FileInterface $info, $name);
+    public function UploadToBucket(File $info, $name);
 }
