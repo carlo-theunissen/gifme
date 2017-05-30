@@ -15,6 +15,7 @@ zip -r $TIMESTAMP_nodejs.zip \
     ./_deploy/ApplicationStart.sh \
     ./_deploy/BeforeInstall.sh \
     ./config.json \
+    ./appspec.yml \
     ./Server.js \
     ./package.json
 
