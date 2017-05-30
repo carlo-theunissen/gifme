@@ -17,7 +17,7 @@ service httpd sto
 #remove old content, except "vendor"
 mv /var/www/vendor /var/temp
 rm -rf /var/www
-mkdir www
+mkdir /var/www
 mv /var/temp /var/www/vendor
 
 #remove old httpd.conf

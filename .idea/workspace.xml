@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a6336f-0a2d-4658-b41d-c56534c11c5f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" afterPath="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/_deploy/BeforeInstall.sh" afterPath="$PROJECT_DIR$/php/_deploy/BeforeInstall.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +18,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AfterInstall.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/_deploy/AfterInstall.sh">
+      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/_deploy/PreDeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="177">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostDeploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/_deploy/PostDeploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AfterInstall.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/_deploy/AfterInstall.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationStart.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/_deploy/ApplicationStart.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeforeInstall.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/_deploy/BeforeInstall.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -38,16 +78,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationStart.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/_deploy/ApplicationStart.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PostDeploy.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/_deploy/PostDeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/_deploy/PreDeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
@@ -78,41 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appspec.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/appspec.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BeforeInstall.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/_deploy/BeforeInstall.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appspec.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/appspec.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -147,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/building/user.conf" />
         <option value="$PROJECT_DIR$/building/BeforeInstall.sh" />
         <option value="$PROJECT_DIR$/building/httpd.conf" />
         <option value="$PROJECT_DIR$/building/ApplicationStart.sh" />
@@ -198,6 +197,7 @@
         <option value="$PROJECT_DIR$/node/_deploy/BeforeInstall.sh" />
         <option value="$PROJECT_DIR$/_sysops/Deploy.sh" />
         <option value="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
+        <option value="$PROJECT_DIR$/php/_deploy/BeforeInstall.sh" />
       </list>
     </option>
   </component>
@@ -257,7 +257,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gifcreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gifcreator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_deploy" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,10 +290,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_deploy" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,12 +442,12 @@
       <workItem from="1494713642427" duration="566000" />
       <workItem from="1494783335267" duration="24551000" />
       <workItem from="1495979573059" duration="2955000" />
-      <workItem from="1495985199720" duration="6640000" />
+      <workItem from="1495985199720" duration="6688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35868000" />
+    <option name="totallyTimeSpent" value="35916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="170" width="1400" height="594" extended-state="0" />
@@ -470,19 +484,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/Resources/config/services.yml" />
     <entry file="file://$PROJECT_DIR$/building/PrepareCodeDeploy.sh" />
     <entry file="file://$PROJECT_DIR$/src/ApiBundle/Entity/Gif.php" />
     <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/DependencyInjection/VideoUploadExtension.php" />
     <entry file="file://$PROJECT_DIR$/php/building/deployAWS.sh" />
-    <entry file="file://$PROJECT_DIR$/php/_deploy/BeforeInstall.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/build/build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -559,22 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/_deploy/PreDeploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/_deploy/PostDeploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/vendor/oneup/uploader-bundle/Oneup/UploaderBundle/Event/PostPersistEvent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -595,14 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/_deploy/AfterInstall.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -839,6 +820,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/PreDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/PostDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/AfterInstall.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/ApplicationStart.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/BeforeInstall.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding />
         </state>
       </provider>
