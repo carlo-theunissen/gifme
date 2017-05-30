@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: Server.js
-    destination: /var/nodejs/Server.js
+  - source: ./Server.js
+    destination: /var/nodejs/
   - source: ./package.json
-    destination: /var/nodejs/package.json
+    destination: /var/nodejs/
   - source: ./config.json
-    destination: /var/nodejs/config.json
+    destination: /var/nodejs/
   - source: ./node_modules
     destination: /var/nodejs/node_modules
 
