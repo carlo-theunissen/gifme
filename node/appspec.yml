@@ -7,6 +7,8 @@ files:
     destination: /var/nodejs/package.json
   - source: ./config.json
     destination: /var/nodejs/config.json
+  - source: ./node_modules
+    destination: /var/nodejs/node_modules
 
 permissions:
   #permissions are set in the ApplicationStart hook

@@ -13,10 +13,7 @@ export ENVIORMENT=uat
 #stop the nodeserver
 forever stopall
 
-#remove old content, except "node_modules"
-mv /var/nodejs/node_modules /var/temp_modules
+#delete nodejs
 rm -rf /var/nodejs
 mkdir /var/nodejs
-mv /var/temp_modules /var/var/node_modules
-
 exit 0

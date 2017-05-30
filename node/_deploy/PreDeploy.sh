@@ -4,6 +4,8 @@
 
 cd node
 
+npm install
+
 #store the timestamp
 TIMESTAMP=$(date +%s)
 
@@ -16,6 +18,7 @@ zip -r $TIMESTAMP_nodejs.zip \
     ./_deploy/BeforeInstall.sh \
     ./config.json \
     ./appspec.yml \
+    ./node_modules/* \
     ./Server.js \
     ./package.json
 
