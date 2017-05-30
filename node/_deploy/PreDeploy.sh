@@ -15,7 +15,7 @@ zip -r $TIMESTAMP_nodejs.zip \
     ./_deploy/ApplicationStart.sh \
     ./_deploy/BeforeInstall.sh \
     ./config.json \
-    ./Server.json \
+    ./Server.js \
     ./package.json
 
 #send to s3

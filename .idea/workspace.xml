@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a6336f-0a2d-4658-b41d-c56534c11c5f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/AfterInstall.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/ApplicationStart.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/BeforeInstall.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/PostDeploy.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/appspec.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NodeWebsocket/Server.js" afterPath="$PROJECT_DIR$/node/Server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NodeWebsocket/config.json" afterPath="$PROJECT_DIR$/node/config.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NodeWebsocket/package.json" afterPath="$PROJECT_DIR$/node/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sysops/Deploy.sh" afterPath="$PROJECT_DIR$/_sysops/Deploy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" afterPath="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,17 +58,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node/_deploy/PreDeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="155">
+              <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -206,9 +195,9 @@
         <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/ApplicationStart.sh" />
         <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/BeforeInstall.sh" />
         <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/PreDeploy.sh" />
-        <option value="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
         <option value="$PROJECT_DIR$/node/_deploy/BeforeInstall.sh" />
         <option value="$PROJECT_DIR$/_sysops/Deploy.sh" />
+        <option value="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
       </list>
     </option>
   </component>
@@ -269,6 +258,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gifcreator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gifcreator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_deploy" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,18 +428,19 @@
       <workItem from="1494713642427" duration="566000" />
       <workItem from="1494783335267" duration="24551000" />
       <workItem from="1495979573059" duration="2955000" />
-      <workItem from="1495985199720" duration="6566000" />
+      <workItem from="1495985199720" duration="6640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35794000" />
+    <option name="totallyTimeSpent" value="35868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="170" width="1400" height="594" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -819,18 +827,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node/_deploy/PreDeploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/_deploy/PreDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding />
         </state>
       </provider>
