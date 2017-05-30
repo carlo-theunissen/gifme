@@ -11,7 +11,7 @@ TIMESTAMP_NODE=$(date +%s)
 
 #These files are zipped and sent to the servers for deployment
 #zip the files:
-zip -r $TIMESTAMP_NODE_nodejs.zip \
+zip -r {$TIMESTAMP_NODE}_nodejs.zip \
     ./app/* \
     ./_deploy/AfterInstall.sh \
     ./_deploy/ApplicationStart.sh \
@@ -23,15 +23,15 @@ zip -r $TIMESTAMP_NODE_nodejs.zip \
     ./package.json
 
 #send to s3
-aws s3 cp $TIMESTAMP_NODE_nodejs.zip s3://gifcreatoruat/deploy/$TIMESTAMP_nodejs.zip --region eu-central-1
+aws s3 cp {$TIMESTAMP_NODE}_nodejs.zip s3://gifcreatoruat/deploy/{$TIMESTAMP_NODE}_nodejs.zip --region eu-central-1
 
 #delete previous made zip
-rm -f $TIMESTAMP_NODE_nodejs.zip
+rm -f {$TIMESTAMP_NODE}_nodejs.zip
 
 #instruct codedeploy to start
 aws deploy create-deployment \
  --application-name gifcreator_uat \
  --deployment-group-name nodejs \
- --s3-location bucket=gifcreatoruat,bundleType=zip,key=deploy/$TIMESTAMP_NODE_nodejs.zip --region us-east-1
+ --s3-location bucket=gifcreatoruat,bundleType=zip,key=deploy/{$TIMESTAMP_NODE}_nodejs.zip --region us-east-1
 
  cd ..
