@@ -14,7 +14,11 @@ bash frontend/_deploy/PreDeploy.sh
 #second deploy the back-end, the backend is also backward compatible with the previous front-end
 bash php/_deploy/PreDeploy.sh
 
+#thirth deploy the nodeserver
+bash node/_deploy/PreDeploy.sh
+
 #postdeploys (in reverse order):
+bash node/_deploy/PostDeploy.sh
 bash php/_deploy/PostDeploy.sh
 bash frontend/_deploy/PostDeploy.sh
 

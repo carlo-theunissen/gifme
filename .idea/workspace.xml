@@ -2,301 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a6336f-0a2d-4658-b41d-c56534c11c5f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/annotations.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainer.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainerCompiler.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/classes.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/classes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/classes.php.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/+/5/KtszP7xMmjGcXxpXfSie" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/+/6/5iGcYEK0TmkUcESiZHLP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/+/Y/6SRlieGA-h4kmJAkJZne" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/-/2/lzWii9zBedvr3XgrMZ-s" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/-/O/dHLiylWyX6-XC50N-xDz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/-/U/JQd+bhSP99eeERRR-SDD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/-/V/g5PSDY6fNu-5+h7NMmUc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/0/A/Fcl8UjIjV8WFTJnWPZD0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/0/R/LPrzr3pH7ybcAJaEPy1S" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/0/X/GVXY9jLu4WVNVQDcA+Uo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/1/B/a31F7kI-cKQOEpx+SzJe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/1/S/wwN6OK3NkQ05oBxH-3UX" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/1/W/ekj3NIcIGWt9T0F5EyX1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/1/X/V9epGlCLqDflchOtKEJ+" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/1/Y/xf3npOhZfQJx6hGrbb91" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/2/3/qDueb1sRA5W9kmc52fN5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/2/G/kMLDuwgA8EwQw4jaEPyI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/2/K/oF4rAIZEbuxM-g4C8md7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/3/7/OWu0aeoGBhUBGg51J8DU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/3/C/nfbAhXR7RROcSwPv-Swy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/3/G/z9oBGgrAf19c5YhmrYEb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/3/K/cMUeav4wQc9xtJ0MgvA9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/3/S/bl0QwqUt8kzGMWKxvVgG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/4/C/FATB+ld4BCmvz+amXfws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/4/E/8NMDoU6ZF9KKkf3xyuXQ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/4/F/mvOJ5LWoIBr12nrO8eq6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/4/R/HBWGufqw2ppgaw-MNCA7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/5/GQLiSn0M-tSWAicSZaNA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/G/zCb3dknvOpUjSQ-ZltFq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/O/3qOfbFV-wkFoq0Kjpylg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/O/606+ZWSFk4TYIhE+hTrn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/R/alEKXe088CoFMEZ6h+w3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/U/PJoS-k5zYSmVyKShGlm-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/5/Z/TQ74DwAOSsbErQEaV4AV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/C/QvhsD9PZI3SpCWEbWpgu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/D/Lj3oJxLPhfQ8TdRAl1bP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/D/PY+rO784Pbn7WqGyeV0s" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/F/rUQQX2buZcOShREnAqjJ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/J/IMkBoYMjdX2Z4ZZv-O52" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/V/yEtvuzqoH6RzrKWokjO1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/6/W/n8OsGVD47JJ7Th8qwOL2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/7/2/bSQqyQhexUuGxRGRzG+a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/7/5/HUYNDSjHmXbwI+ilvY44" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/7/L/HEt3W66PqKzJVveUJjAd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/7/T/y7Zx1DD9xkqmm69SHFLY" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/7/V/DH0rje35hs1j6IFm1cZv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/8/E/6jRvyKghf0PKyYcl5cWL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/8/F/Hu2+gdHcbVU4m-Ly1GIN" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/8/G/NlDJ06Mafuv0oUxYusEO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/8/R/nb2+LxVdNJnPi9ibI8CB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/8/Z/orGcNOtX-GKJg4mlnCg1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/9/3/Wimg47Xh96HwEuBuvuoO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/9/A/LBnWLaPGYeEokb4zrhXG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/-/KZugF7DNi05BEco-uXcs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/6/eaqQAzjns4g7hXvzOild" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/D/NZTqS-h0X5OITbxswjVT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/E/1uru5eRy3pVAyThT4KPk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/E/MZpI4kkKEE-XZyP0Lya-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/E/l8Hfs11WBO6G1CcbCnc7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/G/FT+ony8rJq-uN9Neh0qq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/K/whmmByxV7PUjTKtcaEDx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/N/aJbs2hWCrmtPywedEnSy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/N/pmLn-Ney7gfJdxHeIoip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/O/rJ3i7RS9ut4ZZ7W486O-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/P/6PYIqfGlFer+ccdzirPp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/P/DM1h4Q5pbdlftlqVYXSC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/P/fjndYzSRLpTSDhher8EP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/Q/3rEOJYij7xXtwSJ9DqOe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/W/GfREqxu7k--a1mK-eUIF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/A/W/pWowK1X+V-+JqrMMX7nx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/2/pHHXab6o1qGkteN0Vp0t" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/9/jGgEmQMThsSPaqthzZZv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/B/3gggo6V0JmUWJLAZp3Z9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/B/pIJnS2xZNEcVaXZ94y61" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/F/0XkTrk1LtfPeI-NNumLG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/J/YHDKA+H7sx5ARRhcOQU4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/K/YAOFTmyobNLrOi3zshlY" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/B/Y/xlCgfpuYXrlf-x-bBQon" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/C/0/T9XPuDGow3PZUVmI+IAN" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/C/9/-iT58TTAsOj0eKHi3VhC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/C/C/1C1oQAp61isDzDhHymVZ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/C/L/vPHwH7UXid11wymrr6VN" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/C/Y/XC42fE-f+zrtdCEL1uDj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/6/+iygEtfrmSU0HeldJfjL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/8/clZWPEk9R4IQ-XBr3UEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/H/DjmJrPlxNfPeCqzSbL6f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/H/QT1gMZ2aHyEfdnS1kyNy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/I/lzhEqo9kMZ7SNIAr5mGx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/K/lUrz2h0FzdFjcOWcJ+B7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/L/DXgmfnD84ZYsTB1jWE7f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/L/gz4V1E0uVNNWFF0FCz0a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/R/wMR1ncj2rvzpdHkXSlOs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/S/QjHLUJAxBxQ3YvPxdWUM" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/D/V/VsmwvJsDDgFrAO8VV3JE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/4/CMPHsK81Hp-GFGTQ4FQ8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/H/eSWnf8V7uSKfroiTvt6-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/M/RPUxuhAfBfVyh4oEjOuW" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/N/GdMukq0dZgIks6bJOSth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/O/UrPRGBV4BdXQOfX4t4Zs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/Q/C3ioW-tXnvpjpOrpIEUy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/V/PnhSLT68XktKMVHJeRqK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/E/V/hDruZe-rL4nP2ZsNvo9c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/2/T3yiWdbVCXl61egP9gTF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/E/ZpqwDX+weJJpF5trHcmo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/G/ilTEzaODgj8mvjXmdpz-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/I/GRWKH7-g8GCoiD8vjZc6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/N/lSegD8eW7NqdlOMNIQXU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/P/Cp9E9H9zdHHTWoYvtmyO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/F/V/kyeCgZgSsLKupaA711PI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/G/M/1ez+fzCi-nbBAtghBFVa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/G/S/CyhpcH6MoQguaUFLT278" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/G/T/Ncqozz+DYaUNGl-81EQz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/G/V/6iHRKi9ZkQWJq5vIXT5d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/G/V/UQbAy0+KN89mtg6STkY3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/G/Z/NjN-2Mal193i7rrK6emC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/-/YLKkA40R9hGfvE+TypGl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/8/y1hSh4qMq9WSvNAvHlOQ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/A/OKwsmiaeWeXU29NcQ7X5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/C/dW7+pp2CDuewSW4NeG8E" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/J/y72dIil0Qq-V76cc88g3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/K/0BvdlqCjrkze8qWs4E+A" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/H/Z/eQJ9km4UmMjRY6VeOL6a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/5/chIHOx1o6+SLSW7cqiny" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/7/iuYaVs5mFQ7rm+bDBTqf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/B/YumiQ-6ofmMipuHpXPvc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/C/F9fixyOIMdzezRIBfeoL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/E/nn12j3ckYKHC4RJZK0ft" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/N/VYQFmBeez+C5rADrHmX3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/Q/d0g1Mxo92GkL5PLIGWSf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/Y/AwmWkqQvyng+xaPPbqRn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/I/Y/LoUDRZSSxPZywXVwX4Tg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/J/2/3HoVpCC2+5tWe4E1y8fr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/J/8/EsDwKbjh5scFqKYmSp-Z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/J/E/84yxqyEYtP2w0pIN0VxZ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/J/K/BGl3W6LyJ6rqITPfxjiQ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/J/L/025x4GVIazq+qEHIEUp8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/J/S/TRv2Eupj1HWY74NqcJ23" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/K/3/OA8iz1Ay23DgutPxRh1O" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/K/5/gOIFqk3XtJjx0g+rdoeH" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/K/9/dLJOY1nXIt0ZKEGYkjY2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/K/W/TrdakKwOMM2zEOf56v0Z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/5/WG-7Xs2wyseGW42meEkB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/B/81yIEONdIZ0Eb+wqwwqr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/G/AXn6FkoNFgjr4tFLkiUg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/J/7vcKrlD73JEJWgUnwFKP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/O/9UTLtq3u2D5XQaehVOsB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/P/bWakjDMn0VaSEpCrItx3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/L/X/GuIOYihSGtrtoTgIV1Us" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/6/z5IpCka1V4Ej7BCbzLvn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/B/cEkDUo4EZTsl2Bk-85RA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/C/0luLFZmDzmwqzXdkJH0e" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/D/NVgSjCk8d8Snf-MddOD1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/F/o0ypjG6G9xe9dFimGO02" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/G/dFpDTbup0beqhJM3DMOH" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/M/LxmN0zdnFMTx3Z4B0i3Z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/O/500AKJRKuRYzTTPKOzIC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/R/7-EQlJA3uJxNVV9K5CKO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/V/YOAjrBmQ2hyoq2u4s87G" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/W/tKwQrMiflSp2FFPjlVsJ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/M/Z/7GkWlDDPIYglXrigiYoI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/K/8OvLq4ZzZ9IhERyBXzNv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/K/ghESaQU-b+DqRaX9+nMZ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/K/uJRWlA2ExJyCnZyVpTI-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/M/KiDUi12MSVfQGVxeNbst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/S/oE2Xyr7Yq0hJE8B38STl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/U/cB4mry8l8QmuAvszgaEU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/W/RGFcn7LRtNjn2aw1QLu4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/Y/lurKKMwjNP8SS7Om0nis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/N/Z/OXSgVwyKMhwOSdnppRlB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/1/KERsO4wORzIMCYELgBQ-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/A/uq97jJa+0aiHVDdspMI7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/C/kk2eNsXNvqLNJlgjx8Lp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/D/QLbtAt4Xu7JwCTSJaD1r" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/D/SZ0YQaEHTgFYn5EBVhbs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/F/GE9nhx6NSWVGfH8OfWSi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/M/NKd2e6k4nQhj1MbaaWkm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/N/pTPR+0u4zed5JUrt2B7C" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/O/SnhlrU48SzVbW6x6v2Ut" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/S/NIom65FTazzK8jbRDIJJ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/O/U/TYYsM3yQI+s-O5t5cedV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/+/6ACRUdz+rct5lcgVBcKK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/1/LUgEaIQBNKcMQQcZZMJv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/5/n2Kzq0b4vQVi4yl+VrVo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/6/WDV4UsULZov+WDU4elYB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/7/szdEfXQDBiyjPTwfv8rE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/C/iLtfyNAjyT9nIZJgrqIP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/R/0TfEeedO2WZQ-mANadST" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/T/ToPU+U3UK77wvzrf7sly" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/P/V/4Up47HTXqUkyRdZwlhK5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/+/Wfu9sUXtta1rYehCmhSz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/-/96UB0ujTvKl0oXtdSzsq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/3/A9aDcKAozZ9RyaNiv1+6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/6/B4bZ-TWDu0L9R6xNvHoH" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/F/0Xx1aeRtIi8Hy9nPRqhW" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/G/T71neEgyiXdVfYYle9TN" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/K/+57+OWglVxxPS4uYqBMv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/S/uNw9ebTyLcfPOVaWjfmk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/W/4Qum0xMOblX1ETi3s5HC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Q/Z/7CCqf9-1m0v4ILmjQWso" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/1/jvL0uC0cTdpp5eXejkV-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/3/0RSPJc6b9Y5RrmsHlAwe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/4/LIjuIxvixSbQRdBHtLUJ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/6/BnYFoNNsW8AId5gcvdJ2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/9/gO4L-OnOoflaS5r7I6QL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/B/oEc7g06yUuh5XQXXRfDc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/F/oElKXbg13qMEEtM1cb2r" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/K/D+WejwiaOLN8Y8wFLiZU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/N/wJ5OU4IXEArOrlZqZ3gC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/O/K0Xvwndd1KdtI0XkI94O" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/T/rM4XDy6+4ttVKzd54-+S" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/T/xCcbWBwP0dAIQ4wP4aD-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/Y/-d9RjFpdiQ9bJlMzNWwn" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/Y/51ELG7P3VFYrW5bl5Ke3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/Y/iRlvS-xl7p6FNiXF9FLX" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/Y/kHtx5tuupLpHlBnVqs7d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/R/Z/qMp5zwGeKiJDrQe1HZmY" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/7/pzKTrBDQuqb5DruaehKR" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/G/MQptIFkNReTxB0x-mV+j" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/H/SVMrVy4L2+Csc3TRfcGj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/J/O0VInTq0PBWcKSJF91Ib" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/J/Sz8PLDXMw58N0O0mLSp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/K/8YMYJkU6IbXK99i4aglw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/M/-c7d0P3xtN4729FFu6pf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/S/6knwmWge2Cg2iXICJzF5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/S/zmVLPZUUlQIy6PtXFSxx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/S/U/A4Vc8XyBHDTMCA+LruWg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/A/Wse--IONrHmL8SbVKwe3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/B/myyfxRlR2NIk96Abo6Ta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/F/QyxTva7QltiFzfwZ2-mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/G/MRw5Qmbj08L8KtJOG+h+" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/K/Oc-bnkhQascgM2fkR3HP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/M/4mCrgibW2hmDuZoFgQ63" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/O/+DTC4IxPKlN7-Sj6ZULz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/O/Y2nY3Xbor0r+tCjlZHkL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/Q/L59nK0FBhxMeONOA+UKA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/T/VtBMV3I4N9nEmBJ-ye6z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/T/V/aEjxjcfGjf9eEdtAMoJb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/4/jyYIHNgLmVbTQOQM7gXJ" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/A/mpP8ZV8YVw3aD7XQKxdF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/B/l8zJCe-dj78IH8cqB2cv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/I/X15z5QHJSEmLDCUI+76O" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/S/APkfeyIGY2kAr8awZXNM" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/S/D7ZB7DFhuNSzSBCRJ-Wf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/U/X/5zf0VehdhVgw0lKD9Wp9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/0/QxO2M+KkvHgv1JEB9qNB" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/A/w4YyNVZwawq5Zl1VDD04" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/H/YJWVQKhE0QL+CSE-Rb7x" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/L/Wne1p1fboFyaoxX3mGlK" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/L/o90RKRo6O3NKbunc6Jbu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/T/RsT-C8jAEtlH-nQ2mFjG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/W/OJwX-3z+9+63CJPDw+6j" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/V/X/zLQVr6vreOLxFyAQHk76" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/W/0/07H2RXGiIdOCEEFv28Y+" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/W/E/LoXvgDyY2+dbcXJeXkoS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/W/H/bWW7vVaXlGuXJosJMBYt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/X/2/dpLylVMNQXakcxP8Jg2m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/X/6/xpNQgVQDkhvMVgpYeYQ-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/X/F/cEsIu34Rl94xTM38v6Xd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/X/L/M6MHF4vz2zljpggOjzfq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/X/P/dovo6RyqMBBSamrtv+Tq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/X/T/b+lBMrqZaWzJniS2Tik0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/+/7moJ9g9oSSl2VipherWD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/1/AmMyd-MhaVRrItF38Ar-" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/6/gK2TaNYMIu5Otxzo1jNC" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/A/YQY7m+Xuz0SWmmSb1dS0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/E/F7epSSF48sN2lKzibP2H" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/F/-jtvVvKTCQ4WeTivp-T6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/T/lHlYD2sqjI5MMuRD5QeI" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/V/i4HlYkvdCElgPXnkVLDd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Y/V/tk0Y97Ir4IWUaeFQ4zLP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/2/TjYlw2z9UyIHYzKMD0yA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/A/A7-h4OllWwgBKblf8c-W" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/A/xfjDHLHDsrywgbY7DJVY" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/E/KESnKLRY02PUihOXFGth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/H/8U7g05hGgqN83+BmCA6d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/N/MKF0-DllvgTj4g85-Qqj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/Q/TRv1Ho+LsjbN0oJXW4XM" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/pools/npjT1bCTd2/Z/W/rdy7uPRgWbOWH9kC65EO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/profiler/50/23/9e2350" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/profiler/76/b3/90b376" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/profiler/e5/7c/4c7ce5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/var/cache/dev/profiler/index.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/appspec.yml" afterPath="$PROJECT_DIR$/php/appspec.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/AfterInstall.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/ApplicationStart.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/BeforeInstall.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/PostDeploy.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/appspec.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NodeWebsocket/Server.js" afterPath="$PROJECT_DIR$/node/Server.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NodeWebsocket/config.json" afterPath="$PROJECT_DIR$/node/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/NodeWebsocket/package.json" afterPath="$PROJECT_DIR$/node/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sysops/Deploy.sh" afterPath="$PROJECT_DIR$/_sysops/Deploy.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -312,81 +29,81 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/_deploy/PreDeploy.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="endPoints.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/config/endPoints.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="80" lean-forward="false" selection-start-line="3" selection-start-column="80" selection-end-line="3" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/app/AppKernel.php">
+      <file leaf-file-name="AfterInstall.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/_deploy/AfterInstall.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/app/config/config.yml">
+      <file leaf-file-name="Deploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sysops/Deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/html/app.php">
+      <file leaf-file-name="ApplicationStart.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/_deploy/ApplicationStart.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="120">
+              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/composer.json">
+      <file leaf-file-name="PostDeploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/_deploy/PostDeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="43" column="83" lean-forward="false" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="83" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appspec.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/appspec.yml">
+      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/_deploy/PreDeploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="185">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AfterInstall.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/_deploy/AfterInstall.sh">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appspec.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/appspec.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeforeInstall.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/_deploy/BeforeInstall.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -395,18 +112,18 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="330">
               <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreDeploy.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/_deploy/PreDeploy.sh">
+      <file leaf-file-name="appspec.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/appspec.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="95" lean-forward="false" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
+            <state relative-caret-position="95">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -428,6 +145,7 @@
       <find>sudo</find>
       <find>./php/</find>
       <find>composer</find>
+      <find>ffprobe_command</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -440,20 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/version/test.html" />
-        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
-        <option value="$PROJECT_DIR$/src/VideoUploadBundle/Validators/PostcheckVideo.php" />
-        <option value="$PROJECT_DIR$/src/VideoUploadBundle/DependencyInjection/UploadHandler.php" />
-        <option value="$PROJECT_DIR$/src/VideoUploadBundle/DependencyInjection/FFProbe.php" />
-        <option value="$PROJECT_DIR$/building/userScripts.sh" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/ApiBundle/Controller/gifController.php" />
-        <option value="$PROJECT_DIR$/src/ApiBundle/Form/SelectApi.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/ApiBundle/Form/SelectApiType.php" />
-        <option value="$PROJECT_DIR$/src/ApiBundle/Validate/SelectDataApi.php" />
-        <option value="$PROJECT_DIR$/building/build.sh" />
-        <option value="$PROJECT_DIR$/building/AfterInstall.sh" />
         <option value="$PROJECT_DIR$/building/user.conf" />
         <option value="$PROJECT_DIR$/building/BeforeInstall.sh" />
         <option value="$PROJECT_DIR$/building/httpd.conf" />
@@ -478,18 +182,33 @@
         <option value="$PROJECT_DIR$/frontend/_deploy/Deploy.sh" />
         <option value="$PROJECT_DIR$/php/_deploy/PostDeploy.sh" />
         <option value="$PROJECT_DIR$/frontend/_deploy/PostDeploy.sh" />
-        <option value="$PROJECT_DIR$/_sysops/Deploy.sh" />
         <option value="$PROJECT_DIR$/frontend/temp.js" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
         <option value="$PROJECT_DIR$/php/building/travis.sh" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/frontend/_deploy/PreDeploy.sh" />
-        <option value="$PROJECT_DIR$/frontend/config/endPoints.ts" />
         <option value="$PROJECT_DIR$/php/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/php/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/php/_deploy/AfterInstall.sh" />
         <option value="$PROJECT_DIR$/php/_deploy/PreDeploy.sh" />
         <option value="$PROJECT_DIR$/php/appspec.yml" />
+        <option value="$PROJECT_DIR$/php/_deploy/AfterInstall.sh" />
+        <option value="$PROJECT_DIR$/frontend/config/endPoints.ts" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/FFProbe.php" />
+        <option value="$PROJECT_DIR$/php/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/Validators/PostcheckVideo.php" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/Interfaces/IS3Bucket.php" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/CLIS3Bucket.php" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/S3UploadHandler.php" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/Interfaces/IUploadHelper.php" />
+        <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/SDKS3Bucket.php" />
+        <option value="$PROJECT_DIR$/NodeWebsocket/Server.js" />
+        <option value="$PROJECT_DIR$/NodeWebsocket/appspec.yml" />
+        <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/AfterInstall.sh" />
+        <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/ApplicationStart.sh" />
+        <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/BeforeInstall.sh" />
+        <option value="$PROJECT_DIR$/NodeWebsocket/_deploy/PreDeploy.sh" />
+        <option value="$PROJECT_DIR$/node/_deploy/PreDeploy.sh" />
+        <option value="$PROJECT_DIR$/node/_deploy/BeforeInstall.sh" />
+        <option value="$PROJECT_DIR$/_sysops/Deploy.sh" />
       </list>
     </option>
   </component>
@@ -504,8 +223,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="23" />
+    <option name="x" value="69" />
+    <option name="y" value="170" />
     <option name="width" value="1400" />
     <option name="height" value="594" />
   </component>
@@ -549,7 +268,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
+              <option name="myItemId" value="node" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,47 +282,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gifcreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gifcreator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gifcreator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gifcreator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_deploy" />
+              <option name="myItemId" value="Lambda" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,6 +320,9 @@
       <recent name="$PROJECT_DIR$/src/ApiBundle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/node" />
+      <recent name="$PROJECT_DIR$/NodeWebsocket" />
+      <recent name="$PROJECT_DIR$/NodeWebsocket/_deploy" />
       <recent name="$PROJECT_DIR$/frontend/_deploy" />
     </key>
   </component>
@@ -739,19 +421,18 @@
       <workItem from="1494713642427" duration="566000" />
       <workItem from="1494783335267" duration="24551000" />
       <workItem from="1495979573059" duration="2955000" />
-      <workItem from="1495985199720" duration="2342000" />
+      <workItem from="1495985199720" duration="6566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31570000" />
+    <option name="totallyTimeSpent" value="35794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="23" width="1400" height="594" extended-state="0" />
-    <editor active="true" />
+    <frame x="69" y="170" width="1400" height="594" extended-state="0" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -781,37 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/building/deployAWS.sh" />
-    <entry file="file://$PROJECT_DIR$/building/build.sh" />
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist" />
-    <entry file="file://$PROJECT_DIR$/building/user.ini" />
-    <entry file="file://$PROJECT_DIR$/html/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/building/BeforeInstall.sh" />
-    <entry file="file://$PROJECT_DIR$/building/AfterInstall.sh" />
-    <entry file="file://$PROJECT_DIR$/appspec.yml" />
-    <entry file="file://$PROJECT_DIR$/building/userScripts.sh" />
-    <entry file="file://$PROJECT_DIR$/building/httpd.conf" />
-    <entry file="file://$PROJECT_DIR$/building/ApplicationStart.sh" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="1142" column="33" lean-forward="false" selection-start-line="1142" selection-start-column="33" selection-end-line="1142" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/DependencyInjection/FFProbe.php" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/DependencyInjection/JsonResponseCreator.php" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Entity/Tag.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectRepository.php" />
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml" />
-    <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/DependencyInjection/Configuration.php" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Resources/config/routing.yml" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Resources/config/services.yml" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/VideoController.php" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/TagController.php" />
-    <entry file="file://$PROJECT_DIR$/src/ApiBundle/Controller/GifController.php" />
-    <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/Validators/PostcheckVideo.php" />
-    <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/Validators/VideoValidator.php" />
     <entry file="file://$PROJECT_DIR$/src/VideoUploadBundle/Resources/config/services.yml" />
     <entry file="file://$PROJECT_DIR$/building/PrepareCodeDeploy.sh" />
     <entry file="file://$PROJECT_DIR$/src/ApiBundle/Entity/Gif.php" />
@@ -821,13 +471,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -847,25 +491,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/_deploy/PostDeploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/_deploy/PostDeploy.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sysops/Deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -890,34 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/building/travis.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/_deploy/PreDeploy.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="95" lean-forward="false" selection-start-line="11" selection-start-column="95" selection-end-line="11" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/config/endPoints.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="80" lean-forward="false" selection-start-line="3" selection-start-column="80" selection-end-line="3" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -930,34 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/html/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/_deploy/AfterInstall.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/_deploy/PreDeploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -970,10 +551,286 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/PreDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/PostDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/vendor/oneup/uploader-bundle/Oneup/UploaderBundle/Event/PostPersistEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/config/endPoints.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/_deploy/AfterInstall.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/building/travis.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/Validators/VideoValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/Resources/config/dev_services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="81" column="43" lean-forward="false" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/Interfaces/IS3Bucket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/Interfaces/IUploadHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="e#130#183#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/Validators/PostcheckVideo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/CLIS3Bucket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/FFProbe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/S3UploadHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <element signature="e#139#192#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/SDKS3Bucket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/Server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/VideoUploadExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/appspec.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="95">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/appspec.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/_deploy/ApplicationStart.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/_deploy/AfterInstall.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/_deploy/PostDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/_deploy/BeforeInstall.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sysops/Deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/_deploy/PreDeploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
