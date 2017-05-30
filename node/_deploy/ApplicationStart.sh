@@ -6,4 +6,6 @@ chmod 2775 /var/nodejs
 find /var/nodejs -type d -exec chmod 2775 {} \;
 find /var/nodejs -type f -exec chmod 0664 {} \;
 
-forever start /var/nodejs/Server.js
+cd /var/nodejs/
+forever start Server.js
+cd ../../
