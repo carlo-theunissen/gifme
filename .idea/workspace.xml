@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99a6336f-0a2d-4658-b41d-c56534c11c5f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/php/tests/Resources/allowed/2.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/config/endPoints.ts" afterPath="$PROJECT_DIR$/frontend/config/endPoints.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/components/UploadBar.vue" afterPath="$PROJECT_DIR$/frontend/src/components/UploadBar.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts" afterPath="$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/Server.js" afterPath="$PROJECT_DIR$/node/Server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/SDKS3Bucket.php" afterPath="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/SDKS3Bucket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/var/logs/dev.log" afterPath="$PROJECT_DIR$/php/var/logs/dev.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,21 +68,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadBar.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UploadBar.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/UploadBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="465">
               <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadBar.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UploadBar.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-197">
-              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            <state relative-caret-position="206">
+              <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -202,8 +196,8 @@
         <option value="$PROJECT_DIR$/node/Server.js" />
         <option value="$PROJECT_DIR$/php/src/VideoUploadBundle/DependencyInjection/SDKS3Bucket.php" />
         <option value="$PROJECT_DIR$/frontend/config/endPoints.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts" />
         <option value="$PROJECT_DIR$/frontend/src/components/UploadBar.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts" />
       </list>
     </option>
   </component>
@@ -483,12 +477,12 @@
       <workItem from="1494713642427" duration="566000" />
       <workItem from="1494783335267" duration="24551000" />
       <workItem from="1495979573059" duration="2955000" />
-      <workItem from="1495985199720" duration="12015000" />
+      <workItem from="1495985199720" duration="12302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41243000" />
+    <option name="totallyTimeSpent" value="41530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1400" height="594" extended-state="0" />
@@ -919,21 +913,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/UploadBar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/UploadBar.vue">
+    <entry file="file://$PROJECT_DIR$/frontend/src/controllers/UploadBar.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="206">
+          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

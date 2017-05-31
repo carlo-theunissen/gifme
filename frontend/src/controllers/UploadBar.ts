@@ -52,11 +52,16 @@ export default class UploadBar extends Vue {
     }
     public handleError(errorMsg: any) : void {
         this.uploadText = "ERROR :(";
+        this.state = UploadSates.WAIT_FOR_INPUT;
+        this.loadProgress = 0;
     }
     public handleSuccess(successMsg: any) : void{
+        if(! successMsg.success ){
+            this.handleError("wrong file");
+            return;
+        }
         this.state = UploadSates.PROCESSING;
         this.uploadText = "PROCESSING";
-        console.log(successMsg);
         this.lookingId = successMsg.id;
         this.ws.send(this.lookingId);
     }
