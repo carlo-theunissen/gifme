@@ -68,6 +68,8 @@ function broadcastCreatedImage(key){
     }
 }
 
+var sended = [];
+
 // Create an SQS service object
 var sqs = new AWS.SQS({apiVersion: '2012-11-05'});
 function readMessages(){
@@ -78,19 +80,29 @@ function readMessages(){
         if(data !== null && data.Messages) {
             for(var i =0; i< data.Messages.length; i++ ){
 
+
                 var body = JSON.parse(data.Messages[i].Body);
-                broadcastCreatedImage(body.Records[0].s3.object.key);
+                if(sended.indexOf(body.Records[0].s3.object.key) === -1) {
+                    sended.push(body.Records[0].s3.object.key); //prevent double sending
 
-                var deleteParams = {
-                    QueueUrl: sqsUrl,
-                    ReceiptHandle: data.Messages[i].ReceiptHandle
-                };
+                    if(sended.length > 100) {
+                        sended = sended.splice(sended.length - 100, sended.length - 1);
+                    }
 
-                sqs.deleteMessage(deleteParams, function(err, data) { });
+                    broadcastCreatedImage(body.Records[0].s3.object.key);
+
+                    var deleteParams = {
+                        QueueUrl: sqsUrl,
+                        ReceiptHandle: data.Messages[i].ReceiptHandle
+                    };
+
+                }
             }
         }
         readMessages();
     });
 }
+
+
 
 readMessages();

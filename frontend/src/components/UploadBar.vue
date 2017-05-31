@@ -29,10 +29,10 @@
         </div>
         <div v-show="state == UploadStates.VIEW_RESULT">
             <div id="result" class="row">
-                <div class="col-sm-4"><img src="#" width="100%" alt="Your lovely gif" /></div>
-                <div class="col-sm-8">
+                <div class="col-sm-6"><img src="#" v-bind:src="result.src" width="100%" alt="Your lovely gif" /></div>
+                <div class="col-sm-6">
                     <h2>Your gif is ready!</h2>
-                    <input title="shareLink" id="link" readonly class="borderContainer" value="http://gifme.com/taddadsfaf"/>
+                    <input title="shareLink" id="link" readonly class="borderContainer" v-bind:value="result.src"/>
                     <div class="borderContainer" id="tags"><span>Fun</span><span>Dog</span><span>Animal</span></div>
                     <div class="row" id="buttons">
                         <div class="col-xs-5"><button id="download">Gif me :)</button> </div>

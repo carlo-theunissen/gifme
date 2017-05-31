@@ -34,12 +34,13 @@ class SDKS3Bucket implements IS3Bucket
 
     public function UploadToBucket(File $info, $name)
     {
-        $this->s3Client->putObject(array(
+/*        $this->s3Client->putObject(array(
             'Bucket'       => $this->bucket,
             'Key'          => $name,
             'SourceFile'   => $info->getPathname(),
             'ContentType'  => $info->getMimeType(),
             'ACL'          => 'bucket-owner-full-control',
         ));
+*/
     }
 }
