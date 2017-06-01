@@ -41,23 +41,27 @@ export default class UploadBar extends Vue {
 
     public mounted () {
         this.upload = this.$refs.upload;
+        this.upload = this.upload.$data;
     }
 
     public StartUploadState() : void{
         this.uploadText = "UPLOADING";
         this.state = UploadSates.LOADING;
+        this.error = "";
     }
     public loadChanged(newNumber : number) : void {
         this.loadProgress = newNumber;
+
     }
     public handleError(errorMsg: any) : void {
-        this.uploadText = "ERROR :(";
+        this.error = errorMsg;
         this.state = UploadSates.WAIT_FOR_INPUT;
         this.loadProgress = 0;
+        console.log(errorMsg);
     }
     public handleSuccess(successMsg: any) : void{
         if(! successMsg.success ){
-            this.handleError("wrong file");
+            this.handleError("File is not supported");
             return;
         }
         this.state = UploadSates.PROCESSING;
@@ -73,6 +77,7 @@ export default class UploadBar extends Vue {
         });
         axios.all([filesize]).then(() => {
             this.state = UploadSates.WAIT_FOR_INPUT;
+            this.events.setMaxSize(this.size);
         })
     }
 
@@ -90,6 +95,7 @@ export default class UploadBar extends Vue {
     result:any = {
         "src" : ""
     };
+    error : string = "";
 
     ws: WebSocket;
 }

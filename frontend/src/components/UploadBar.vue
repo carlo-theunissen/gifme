@@ -1,5 +1,8 @@
 <template>
     <div id="container">
+        <div id="errorMsg" class="uploadClick">
+            <span  v-show="error !== '' ">{{ error }} </span>
+        </div>
         <div class="bars" v-show="state === UploadStates.LOADING || state === UploadStates.PROCESSING">
             <b-progress :striped="state === UploadStates.PROCESSING" :animated="state === UploadStates.PROCESSING" :value="loadProgress" v-bind:class="{ completed: state === UploadStates.PROCESSING}" class="uploadClick">{{ uploadText }}</b-progress>
         </div>
@@ -159,6 +162,10 @@
                 background: $primary-color url("../assets/png/download.png") no-repeat 12px 8px
                 padding-left: 32px
 
+    #errorMsg
+        border: none
+        text-align: left
+        color: $secondary-color
 </style>
 
 <style lang="sass">

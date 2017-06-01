@@ -8,12 +8,18 @@ import Vue from 'vue'
 
 class UploadBarEventController{
     private uploadBar : UploadBar;
-    private bounce : () => void;
+    private sendBounce : () => void;
+    private sizeBounce : () => void;
     private component : any;
-
+    private allowedSize : number;
     public constructor(uploadBar: UploadBar){
         this.uploadBar = uploadBar;
-        this.bounce = _.debounce(this.sendRequestToServer, 100);
+        this.sendBounce = _.debounce(this.sendRequestToServer, 100);
+        this.sizeBounce = _.debounce(this.sizeToBig, 100);
+
+    }
+    public setMaxSize(size : number) : void {
+        this.allowedSize = size;
     }
 
     /**
@@ -23,9 +29,13 @@ class UploadBarEventController{
      */
      public add = (file:any, component: any) : void=> {
 
-        this.bounce();
-        file.postUrl = apiConfig.fileUpload;
-        this.component = component;
+        if(file.size >= this.allowedSize){
+            this.sizeBounce();
+        } else {
+            this.sendBounce();
+            file.postUrl = apiConfig.fileUpload;
+            this.component = component;
+        }
     };
 
     public progress = (file:any, component:Vue) : void  => {
@@ -43,6 +53,9 @@ class UploadBarEventController{
     private sendRequestToServer() : void{
         this.uploadBar.StartUploadState();
         this.component.active = true //this makes the vue-upload-component send a request to the serer
+    }
+    private sizeToBig() : void{
+        this.uploadBar.handleError("File is to big, " + Math.floor(this.allowedSize / (1028 * 1028)) + "mb is max");
     }
 }
 export default UploadBarEventController;
