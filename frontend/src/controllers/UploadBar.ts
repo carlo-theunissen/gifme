@@ -16,6 +16,7 @@ enum UploadSates{
 
 @Component({
     name: "upload-bar",
+
     components: {
         "file-upload":  Upload
     }
@@ -32,10 +33,16 @@ export default class UploadBar extends Vue {
         this.ws.onmessage = this.websocketMessage;
     }
     private websocketMessage(data: MessageEvent) : void{
-        console.log(data);
         if(data.data.indexOf(this.lookingId) > -1){
-            this.state = UploadSates.VIEW_RESULT;
-            this.result.src = apiConfig.gifLocation + data.data;
+            console.log(apiConfig.gifLocation + data.data);
+            let tempImg = new Image();
+            tempImg.onload = () => {
+                this.state = UploadSates.VIEW_RESULT;
+                this.result.img = tempImg.src;
+            };
+
+            tempImg.src = apiConfig.gifLocation + data.data;
+
         }
     }
 
@@ -96,6 +103,5 @@ export default class UploadBar extends Vue {
         "src" : ""
     };
     error : string = "";
-
     ws: WebSocket;
 }

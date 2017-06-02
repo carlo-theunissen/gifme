@@ -32,7 +32,7 @@
         </div>
         <div v-show="state == UploadStates.VIEW_RESULT">
             <div id="result" class="row">
-                <div class="col-sm-6"><img src="#" v-bind:src="result.src" width="100%" alt="Your lovely gif" /></div>
+                <div class="col-sm-6"><img src="#" class="img" v-bind:src="result.src" width="100%" alt="Your lovely gif" /></div>
                 <div class="col-sm-6">
                     <h2>Your gif is ready!</h2>
                     <input title="shareLink" id="link" readonly class="borderContainer" v-bind:value="result.src"/>
