@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+#update
+yum update -y
+
 #install apache with php
 yum install -y httpd24 php70 php70-mbstring php70-pdo php70-mysqli
 
