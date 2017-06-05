@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: uat.c26jnrz7ginf.us-east-1.rds.amazonaws.com
+    database_port: 3306
+    database_name: gifme
+    database_user: uat_db
+    database_password: ABC123ABC!
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 4346318e3d2f6c38cc0db1d9038320845f9e0d33
+
+    bucket_name: gifcreatoruat
+    bucket_region: eu-central-1
+
+

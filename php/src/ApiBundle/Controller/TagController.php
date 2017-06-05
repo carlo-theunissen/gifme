@@ -14,6 +14,7 @@ use Symfony\Component\HttpFoundation\Request;
 class TagController extends Controller
 {
     public function selectAllAction(Request $request){
+
         $repository =  $this->getDoctrine()->getManager()->getRepository('ApiBundle:Tag');
         $out = ['tags' => []];
         /** @var Tag $tag */

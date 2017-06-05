@@ -22,13 +22,13 @@ class Gif
     private $fileName;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Tag")
+     * @ORM\OneToMany(targetEntity="ApiBundle\Entity\TagScore", mappedBy="gifId")
      */
-    private $tags;
+    private $tagScores;
 
     public function __construct()
     {
-        $this->tags = new ArrayCollection();
+        $this->tagScores = new ArrayCollection();
     }
 
     /**
@@ -58,23 +58,23 @@ class Gif
     /**
      * @return ArrayCollection
      */
-    public function getTags()
+    public function getTagScores()
     {
-        return $this->tags;
+        return $this->tagScores;
     }
 
     /**
-     * @param mixed $tags
+     * @param mixed $tagScores
      */
-    public function setTags($tags)
+    public function setTagScores($tagScores)
     {
-        $this->tags = $tags;
+        $this->tagScores = $tagScores;
     }
 
     public function toArray(){
         $tags = [];
-        /** @var Tag $item */
-        foreach($this->tags->getValues() as $item){
+        /** @var TagScore $item */
+        foreach($this->tagScores->getValues() as $item){
             $tags[] = $item->toArray();
         }
         return [

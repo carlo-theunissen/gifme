@@ -2,6 +2,8 @@
 #this file is executed on the sysops server
 #========
 
+git pull
+
 #first deploy the front-end
 #the front-end is always backwards compatible with the previous build
 #meaning that both the old version and the new version can be run simultaneously (or at least the assets that the old version is using is still available)
