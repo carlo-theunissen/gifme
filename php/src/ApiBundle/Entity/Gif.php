@@ -22,7 +22,7 @@ class Gif
     private $fileName;
 
     /**
-     * @ORM\OneToMany(targetEntity="ApiBundle\Entity\TagScore", mappedBy="gifId")
+     * @ORM\OneToMany(targetEntity="ApiBundle\Entity\TagScore", mappedBy="gif")
      */
     private $tagScores;
 

@@ -24,9 +24,10 @@ class GifController extends Controller
            $repository =  $this->getDoctrine()->getManager()->getRepository('ApiBundle:Gif');
 
            $query = $repository->createQueryBuilder('g')
-               ->where(':tag_ids MEMBER OF g.tags')
-               ->setParameter('tag_ids', $data->getTagsAsArray())
-               ->getQuery();
+               ->join('g.tagScores', 't')
+               ->where('t.tag = :id')
+               ->setParameter('id', $data->tags)
+                ->getQuery();
 
            return new JsonResponse($this->createJsonResponseFromGifs($query->getResult()));
 

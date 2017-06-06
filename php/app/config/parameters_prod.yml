@@ -2,7 +2,7 @@
 parameters:
     database_host: uat.c26jnrz7ginf.us-east-1.rds.amazonaws.com
     database_port: 3306
-    database_name: gifme
+    database_name: uat
     database_user: uat_db
     database_password: ABC123ABC!
     mailer_transport: smtp
