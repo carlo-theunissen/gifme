@@ -9,13 +9,11 @@ import * as util from "util"
 import {GifCreator} from "./src/GifCreator";
 import config from "./config/parameters"
 
-exports.handler = function(event, context, callback){
+function call(event, context, callback){
 
     const exec = new ExecHelper();
     const s3 = new S3Helper();
     const gifCreator = new GifCreator();
-
-    console.log(event, context);
 
     const srcBucket = event.Records[0].s3.bucket.name;
     const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
@@ -36,11 +34,13 @@ exports.handler = function(event, context, callback){
 */
         s3.downloadTo(srcKey, srcBucket, movieLocation)
     ])
+
     //second: create the gif
         .then(() => gifCreator.CreateGif(movieLocation))
 
     //third: upload it back to s3
         .then(() => s3.uploadTo(util.format(config.s3_upload_location, uploadId), srcBucket, config.result_gif));
+
 };
 
-exports.handler();
+export default call;

@@ -2,13 +2,13 @@
  * Created by carlo on 7-6-2017.
  */
 import * as Fs from "fs"
-/// <reference types="aws-sdk" />
-import * as AWS from 'aws-sdk/dist/aws-sdk.js'
+const AWS = require('aws-sdk');
 
 export class S3Helper {
-    private _s3 : AWS.S3;
+    private _s3;
     public constructor(){
-        this._s3 = AWS.S3;
+        console.log(AWS);
+        this._s3 = new AWS.S3();
     }
     public downloadTo(s3key : string, s3Bucket: string, newLocation: string) : Promise<string>{
         return new Promise((resolve, reject) => {
