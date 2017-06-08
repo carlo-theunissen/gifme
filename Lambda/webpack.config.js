@@ -3,6 +3,7 @@
  */
 module.exports = {
     entry:  './main.ts',
+    target: 'node',
     output : {
         filename: 'index.js'
     },

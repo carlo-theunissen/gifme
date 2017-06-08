@@ -15,7 +15,7 @@ export class ExecHelper{
         return this.executeCommand(util.format("chmod 755 %s", file));
     }
 
-    private executeCommand(command : string) : Promise<string>{
+    public executeCommand(command : string) : Promise<string>{
 
         return new Promise((resolve, reject) => {
 

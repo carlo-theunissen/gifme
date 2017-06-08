@@ -6,26 +6,41 @@
 import { ExecHelper } from './src/ExecHelper'
 import { S3Helper } from './src/S3Helper'
 import * as util from "util"
+import {GifCreator} from "./src/GifCreator";
+import config from "./config/parameters"
 
 exports.handler = function(event, context, callback){
 
-    let exec = new ExecHelper();
-    let s3 = new S3Helper();
-    let srcBucket = event.Records[0].s3.bucket.name;
-    let srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
-    let name = srcKey.split('/')[1];
+    const exec = new ExecHelper();
+    const s3 = new S3Helper();
+    const gifCreator = new GifCreator();
 
+    console.log(event, context);
 
-    exec
-        //first: copy the ffmpeg binary to the tmp folder, this is the place aws lets us execute everything
-        .moveFile('ffmpeg', '/tmp/ffmpeg')
-        .then(() => exec.ChmodFile('/tmp/ffmpeg'))
+    const srcBucket = event.Records[0].s3.bucket.name;
+    const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
+    const name = srcKey.split('/')[1];
+    const uploadId = srcKey.split('.')[0];
 
-        //second: copy the movie
-        .then(() => {
-            return s3.downloadTo(srcKey, srcBucket, util.format("/tmp/%s", name));
-        })
+    const movieLocation = util.format("%s/%s", config.tmp_folder, name);
 
+    //first: copy the ffmpeg binary and the gifsicle binary to the tmp folder and download the file
+    Promise.all([
+        exec
+            .moveFile('ffmpeg', config.ffmpeg_location)
+            .then(() => exec.ChmodFile(config.ffmpeg_location)),
+/*
+        exec
+            .moveFile('gifsicle', config.gifsicle_location)
+            .then(() => exec.ChmodFile(config.gifsicle_location)),
+*/
+        s3.downloadTo(srcKey, srcBucket, movieLocation)
+    ])
+    //second: create the gif
+        .then(() => gifCreator.CreateGif(movieLocation))
 
-
+    //third: upload it back to s3
+        .then(() => s3.uploadTo(util.format(config.s3_upload_location, uploadId), srcBucket, config.result_gif));
 };
+
+exports.handler();
