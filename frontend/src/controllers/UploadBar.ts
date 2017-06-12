@@ -38,10 +38,9 @@ export default class UploadBar extends Vue {
             let tempImg = new Image();
             tempImg.onload = () => {
                 this.state = UploadSates.VIEW_RESULT;
-
             };
 
-            this.result.src = apiConfig.gifLocation + data.data;
+            this.result.img = apiConfig.gifLocation + data.data;
             tempImg.src = apiConfig.gifLocation + data.data;
 
         }
@@ -101,7 +100,7 @@ export default class UploadBar extends Vue {
     upload:any = {};
     events : UploadBarEventController;
     result:any = {
-        "src" : ""
+        "img" : "TEMP"
     };
     error : string = "";
     ws: WebSocket;
