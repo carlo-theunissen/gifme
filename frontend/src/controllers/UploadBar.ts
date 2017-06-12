@@ -41,7 +41,7 @@ export default class UploadBar extends Vue {
 
             };
 
-            this.result.img = apiConfig.gifLocation + data.data;
+            this.result.src = apiConfig.gifLocation + data.data;
             tempImg.src = apiConfig.gifLocation + data.data;
 
         }
