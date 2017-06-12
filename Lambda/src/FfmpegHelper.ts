@@ -15,11 +15,11 @@ export class FfmpegHelper {
     }
 
     public createPalette(movFile: string, outFile: string) : Promise<string>{
-        return this._exec.executeCommand(util.format('%s -v warning -i %s -vf "fps=5,scale=160:-1:flags=lanczos,palettegen" -y %s', this._binary, movFile, outFile));
+        return this._exec.executeCommand(util.format('%s -v warning -i %s -vf "fps=5,scale=320:-1:flags=lanczos,palettegen" -y %s', this._binary, movFile, outFile));
     }
 
     public createGif(movFile: string, pallette: string, outfile: string) : Promise<string>{
-        return this._exec.executeCommand(util.format('%s -y -i %s -i %s -lavfi "fps=15,scale=160:-1:flags=lanczos [x]; [x][1:v] paletteuse" -y %s', this._binary, movFile, pallette, outfile))
+        return this._exec.executeCommand(util.format('%s -y -i %s -i %s -lavfi "fps=15,scale=320:-1:flags=lanczos [x]; [x][1:v] paletteuse" -y %s', this._binary, movFile, pallette, outfile))
     }
 
 }

@@ -8,10 +8,12 @@ import * as util from "util"
 export class ExecHelper{
 
     public moveFile (old: string, newLocation:string) : Promise<string>{
+        console.log("movefile");
         return this.executeCommand(util.format("cp %s %s", old, newLocation));
     }
 
     public ChmodFile(file : string) : Promise<string>{
+        console.log("ChmodFile");
         return this.executeCommand(util.format("chmod 755 %s", file));
     }
 

@@ -3225,9 +3225,8 @@ exports.default = {
     "ffmpeg_location": "/tmp/ffmpeg",
     "s3_upload_location": "out/%d.gif",
     "result_gif": '/tmp/result.gif',
-    "tmp_folder": "/tmp",
-    "gif_width": 360,
-    "gif_optimize": 10
+    "temp_gif": '/tmp/tmp.gif',
+    "tmp_folder": "/tmp"
 };
 
 
@@ -3245,9 +3244,11 @@ const exec = __webpack_require__(95);
 const util = __webpack_require__(10);
 class ExecHelper {
     moveFile(old, newLocation) {
+        console.log("movefile");
         return this.executeCommand(util.format("cp %s %s", old, newLocation));
     }
     ChmodFile(file) {
+        console.log("ChmodFile");
         return this.executeCommand(util.format("chmod 755 %s", file));
     }
     executeCommand(command) {
@@ -8652,23 +8653,23 @@ function call(event, context, callback) {
     const gifCreator = new GifCreator_1.GifCreator();
     const srcBucket = event.Records[0].s3.bucket.name;
     const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, " "));
+    const region = event.Records[0].awsRegion;
     const name = srcKey.split('/')[1];
-    const uploadId = srcKey.split('.')[0];
+    const uploadId = name.split('.')[0];
     const movieLocation = util.format("%s/%s", parameters_1.default.tmp_folder, name);
     //first: copy the ffmpeg binary and the gifsicle binary to the tmp folder and download the file
     Promise.all([
         exec
             .moveFile('ffmpeg', parameters_1.default.ffmpeg_location)
             .then(() => exec.ChmodFile(parameters_1.default.ffmpeg_location)),
-        /*
-                exec
-                    .moveFile('gifsicle', config.gifsicle_location)
-                    .then(() => exec.ChmodFile(config.gifsicle_location)),
-        */
+        exec
+            .moveFile('gifsicle', parameters_1.default.gifsicle_location)
+            .then(() => exec.ChmodFile(parameters_1.default.gifsicle_location)),
         s3.downloadTo(srcKey, srcBucket, movieLocation)
     ])
         .then(() => gifCreator.CreateGif(movieLocation))
-        .then(() => s3.uploadTo(util.format(parameters_1.default.s3_upload_location, uploadId), srcBucket, parameters_1.default.result_gif));
+        .then(() => s3.uploadTo(util.format(parameters_1.default.s3_upload_location, uploadId), srcBucket, parameters_1.default.result_gif))
+        .then(() => callback(null, "Successfully uploaded " + util.format(parameters_1.default.s3_upload_location, uploadId)));
 }
 ;
 exports.default = call;
@@ -8694,21 +8695,31 @@ const Fs = __webpack_require__(19);
 const AWS = __webpack_require__(97);
 class S3Helper {
     constructor() {
-        console.log(AWS);
         this._s3 = new AWS.S3();
     }
     downloadTo(s3key, s3Bucket, newLocation) {
         return new Promise((resolve, reject) => {
+            console.log("Download started", newLocation, s3key, s3Bucket);
             let options = {
                 Bucket: s3Bucket,
                 Key: s3key
             };
             //download the file
             let file = Fs.createWriteStream(newLocation);
-            let fileStream = this._s3.getObject(options).createReadStream();
+            let read = new AWS.S3().getObject(options);
+            read.on("error", (error) => {
+                console.log("ERROR!", error);
+            });
+            let fileStream = read.createReadStream();
             let stream = fileStream.pipe(file);
-            stream.on("finish", () => resolve(newLocation));
-            stream.on("error", () => reject(""));
+            stream.on("finish", function () {
+                console.log("Resolve! :)");
+                resolve(newLocation);
+            });
+            stream.on("error", function (error) {
+                reject(error);
+                console.log("Download error! :(", error);
+            });
         });
     }
     uploadTo(s3key, s3Bucket, fileLocation) {
@@ -8717,7 +8728,7 @@ class S3Helper {
             fileStream.on('error', function (err) {
                 reject(err);
             });
-            fileStream.on('open', function () {
+            fileStream.on('open', () => {
                 //place is back to the bucket
                 this._s3.putObject({
                     Bucket: s3Bucket,
@@ -164866,11 +164877,10 @@ class GifCreator {
     }
     CreateGif(movLocation) {
         const paletteLocation = util.format("%s/palette.png", parameters_1.default.tmp_folder);
-        const ffmpegGifLocation = util.format("%s/out.gif", parameters_1.default.tmp_folder);
         return this
             ._ffmpeg.createPalette(movLocation, paletteLocation)
-            .then(() => this._ffmpeg.createGif(movLocation, paletteLocation, ffmpegGifLocation));
-        // .then(() => this._gifsicle.optimizeGif(ffmpegGifLocation,config.result_gif));
+            .then(() => this._ffmpeg.createGif(movLocation, paletteLocation, parameters_1.default.temp_gif))
+            .then(() => this._gifsicle.optimizeGif(parameters_1.default.temp_gif, parameters_1.default.result_gif));
     }
 }
 exports.GifCreator = GifCreator;
@@ -164898,10 +164908,10 @@ class FfmpegHelper {
         this._exec = new ExecHelper_1.ExecHelper();
     }
     createPalette(movFile, outFile) {
-        return this._exec.executeCommand(util.format('%s -v warning -i %s -vf "fps=5,scale=160:-1:flags=lanczos,palettegen" -y %s', this._binary, movFile, outFile));
+        return this._exec.executeCommand(util.format('%s -v warning -i %s -vf "fps=5,scale=320:-1:flags=lanczos,palettegen" -y %s', this._binary, movFile, outFile));
     }
     createGif(movFile, pallette, outfile) {
-        return this._exec.executeCommand(util.format('%s -y -i %s -i %s -lavfi "fps=15,scale=160:-1:flags=lanczos [x]; [x][1:v] paletteuse" -y %s', this._binary, movFile, pallette, outfile));
+        return this._exec.executeCommand(util.format('%s -y -i %s -i %s -lavfi "fps=15,scale=320:-1:flags=lanczos [x]; [x][1:v] paletteuse" -y %s', this._binary, movFile, pallette, outfile));
     }
 }
 exports.FfmpegHelper = FfmpegHelper;
@@ -164923,7 +164933,7 @@ class GifsicleHelper {
         this._exec = new ExecHelper_1.ExecHelper();
     }
     optimizeGif(gifLocation, outLocation) {
-        return this._exec.executeCommand(util.format('%s -o=%d --resize-width %d %s > %s', this._binary, this._optimize, this._width, gifLocation, outLocation));
+        return this._exec.executeCommand(util.format('%s --lossy=80 -O3 %s -o %s', this._binary, gifLocation, outLocation));
     }
 }
 exports.GifsicleHelper = GifsicleHelper;

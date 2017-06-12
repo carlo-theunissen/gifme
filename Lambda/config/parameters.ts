@@ -6,7 +6,6 @@ export default {
     "ffmpeg_location" : "/tmp/ffmpeg",
     "s3_upload_location" : "out/%d.gif",
     "result_gif" : '/tmp/result.gif',
-    "tmp_folder" : "/tmp",
-    "gif_width" : 360,
-    "gif_optimize" : 10
+    "temp_gif" : '/tmp/tmp.gif',
+    "tmp_folder" : "/tmp"
 }

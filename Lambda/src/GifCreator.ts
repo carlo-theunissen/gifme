@@ -18,12 +18,11 @@ export class GifCreator {
 
     public CreateGif(movLocation: string) : Promise<string>{
         const paletteLocation = util.format("%s/palette.png",config.tmp_folder);
-        const ffmpegGifLocation = util.format("%s/out.gif",config.tmp_folder);
 
         return this
             ._ffmpeg.createPalette(movLocation, paletteLocation)
-            .then(() => this._ffmpeg.createGif(movLocation,paletteLocation, ffmpegGifLocation))
-           // .then(() => this._gifsicle.optimizeGif(ffmpegGifLocation,config.result_gif));
+            .then(() => this._ffmpeg.createGif(movLocation,paletteLocation, config.temp_gif))
+            .then(() => this._gifsicle.optimizeGif(config.temp_gif,config.result_gif));
     }
 
 
