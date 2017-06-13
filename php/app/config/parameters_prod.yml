@@ -1,4 +1,5 @@
-# This file is auto-generated during the composer install
+# Passwords in this file are not valid anymore ;)
+# This is an example
 parameters:
     database_host: uat.c26jnrz7ginf.us-east-1.rds.amazonaws.com
     database_port: 3306
@@ -10,8 +11,10 @@ parameters:
     mailer_user: null
     mailer_password: null
     secret: 4346318e3d2f6c38cc0db1d9038320845f9e0d33
-
     bucket_name: gifcreatoruat
     bucket_region: eu-central-1
+    jwt_public_key_path:  '%kernel.root_dir%/../var/jwt/public.pem'    # ssh public key path
+    jwt_key_pass_phrase:  'G~z'E1B"{aTkkJ7TSkU~XWz&{DQ)5!vcZ_5XTdrU2+c)5<8W@(@BHwO)6u(2_bF'                                      # ssh key pass phrase if present
+    jwt_token_ttl: 60*60 #10 seconds
 
 

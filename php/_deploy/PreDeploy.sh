@@ -19,6 +19,7 @@ zip -r $TIMESTAMP.zip \
     ./html/* \
     ./html/.htaccess \
     ./src/* \
+    ./var/jwt/* \
     ./composer.json \
     ./composer.lock \
     ./appspec.yml \

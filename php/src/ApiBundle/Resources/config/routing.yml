@@ -13,3 +13,7 @@ api_formats:
 api_file_size:
     path:     /video/filesize
     defaults: { _controller: ApiBundle:Video:selectMaxFileSize }
+
+api_lambda_tag:
+    path:     /lambda_tag
+    defaults: { _controller: ApiBundle:Tag:SetTags }

@@ -23,4 +23,8 @@ class TagController extends Controller
         }
         return new JsonResponse($out);
     }
+
+    public function setTagsAction(Request $request){
+        return new JsonResponse(["Het Werkt!"]);
+    }
 }

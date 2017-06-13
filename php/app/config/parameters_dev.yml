@@ -10,8 +10,8 @@ parameters:
     mailer_user: null
     mailer_password: null
     secret: 4346318e3d2f6c38cc0db1d9038320845f9e0d33
-
     bucket_name: gifcreatoruat
     bucket_region: eu-central-1
-
-
+    jwt_public_key_path: '%kernel.root_dir%/../var/jwt/public.pem'    # ssh public key path
+    jwt_key_pass_phrase: G~z'E1B"{aTkkJ7TSkU~XWz&{DQ)5!vcZ_5XTdrU2+c)5<8W@(@BHwO)6u(2_bF                                      # ssh key pass phrase if present
+    jwt_token_ttl: 10 #10 seconds
