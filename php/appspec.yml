@@ -21,7 +21,14 @@ files:
     destination: /etc/httpd/conf/
 
 permissions:
-  #permissions are set in the ApplicationStart hook
+    - object: /var/www
+      pattern: "*"
+      owner: apache
+      group: apache
+      mode: 644
+      type:
+        - file
+        - directory
 
 hooks:
    BeforeInstall:
@@ -32,6 +39,9 @@ hooks:
       - location: _deploy/AfterInstall.sh
         timeout: 300 #5 minutes
         runas: root
+      - location: _deploy/Composer.sh
+        timeout: 300 #5 minutes
+        runas: apache #apache user
    ApplicationStart:
      - location: _deploy/ApplicationStart.sh
        timeout: 60 #1 minute

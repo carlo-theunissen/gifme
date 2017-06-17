@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#install everything with composer
-composer install -d  /var/www/
-
 #instal ffmpeg
 mkdir dependencies
 mkdir dependencies/download
