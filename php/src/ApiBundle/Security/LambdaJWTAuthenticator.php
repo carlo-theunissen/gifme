@@ -4,6 +4,7 @@ namespace ApiBundle\Security;
 use ApiBundle\Entity\LambdaUser;
 use Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\AuthorizationHeaderTokenExtractor;
+use Symfony\Component\Finder\Exception\AccessDeniedException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
@@ -50,7 +51,7 @@ class LambdaJWTAuthenticator extends AbstractGuardAuthenticator
      */
     public function start(Request $request, AuthenticationException $authException = null)
     {
-        return new Response('Auth header required', 401);
+        throw new AccessDeniedException("Access Denied");
     }
 
     /**
@@ -90,8 +91,11 @@ class LambdaJWTAuthenticator extends AbstractGuardAuthenticator
             'Bearer',
             'Authorization'
         );
-
-        $token = $extractor->extract($request);
+        try {
+            $token = $extractor->extract($request);
+        }catch (\Exception $e){
+            return null;
+        }
 
         if(!$token) {
             return null;
@@ -117,7 +121,12 @@ class LambdaJWTAuthenticator extends AbstractGuardAuthenticator
      */
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
-        $data = $this->jwtEncoder->decode($credentials);
+        try {
+
+            $data = $this->jwtEncoder->decode($credentials);
+        }catch (\Exception $e) {
+            return null;
+        }
 
         if(!$data || !is_array($data) || !isset($data['data'])){
             return null;
@@ -162,7 +171,8 @@ class LambdaJWTAuthenticator extends AbstractGuardAuthenticator
      */
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)
     {
-        return new Response("Auth failure", 303);
+
+        throw new AccessDeniedException("Access Denied");
     }
 
     /**
