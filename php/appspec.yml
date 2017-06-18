@@ -21,20 +21,22 @@ files:
     destination: /etc/httpd/conf/
 
 permissions:
-    - object: /var/www/vendor
+    - object: /var/www
+      pattern: "*"
+      owner: codedeploy
+      group: webservices
+      mode: 2740
+      type:
+       - directory
+       - file
+    - object: /var/www/var
       pattern: "*"
       owner: apache
       group: webservices
       mode: 2070
       type:
-        - directory
-    - object: /var/www
-      owner: apache
-      group: webservices
-      mode: 2070
-      type:
-        - directory
-        - file
+       - directory
+       - file
 
 hooks:
    BeforeInstall:
