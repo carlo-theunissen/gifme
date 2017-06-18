@@ -25,7 +25,7 @@ permissions:
       pattern: "*"
       owner: apache
       group: webservices
-      mode: 0070
+      mode: 2070
       type:
         - file
         - directory
@@ -33,10 +33,13 @@ permissions:
       pattern: "*"
       owner: apache
       group: webservices
-      mode: 0070
+      mode: 2070
       type:
-        - file
         - directory
+    - object: /var/www/
+      owner: apache
+      group: webservices
+      mode: 2070
 
 hooks:
    BeforeInstall:
