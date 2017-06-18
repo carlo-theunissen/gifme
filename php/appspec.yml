@@ -24,10 +24,12 @@ permissions:
     - object: /var/www
       owner: codedeploy
       group: webservices
+      except: [/var/www/var]
       mode: 2740
     - object: /var/www
       owner: codedeploy
       group: webservices
+      except: [/var/www/var]
       mode: 2740
       type:
        - directory
