@@ -21,14 +21,6 @@ files:
     destination: /etc/httpd/conf/
 
 permissions:
-    - object: /var/www
-      pattern: "*"
-      owner: apache
-      group: webservices
-      mode: 2070
-      type:
-        - file
-        - directory
     - object: /var/www/vendor
       pattern: "*"
       owner: apache
@@ -36,7 +28,7 @@ permissions:
       mode: 2070
       type:
         - directory
-    - object: /var/www/
+    - object: /var/www
       owner: apache
       group: webservices
       mode: 2070
