@@ -15,6 +15,7 @@ zip -r $TIMESTAMP.zip \
     ./_deploy/ApplicationStart.sh \
     ./_deploy/BeforeInstall.sh \
     ./_deploy/Composer.sh \
+    ./_deploy/SetUserRights.sh \
     ./_deploy/user.ini \
     ./_deploy/httpd.conf \
     ./html/* \
