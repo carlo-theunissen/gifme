@@ -22,21 +22,25 @@ files:
 
 permissions:
     - object: /var/www
-      pattern: "*"
+      owner: codedeploy
+      group: webservices
+      mode: 2740
+    - object: /var/www
       owner: codedeploy
       group: webservices
       mode: 2740
       type:
        - directory
-       - file
     - object: /var/www/var
-      pattern: "*"
       owner: apache
       group: webservices
       mode: 2070
       type:
        - directory
-       - file
+    - object: /var/www/var
+      owner: apache
+      group: webservices
+      mode: 2070
 
 hooks:
    BeforeInstall:
