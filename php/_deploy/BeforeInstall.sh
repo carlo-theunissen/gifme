@@ -26,3 +26,9 @@ mv /var/temp /var/www/vendor
 #remove old httpd.conf
 rm -f /etc/httpd/conf/httpd.conf
 exit 0
+
+#make usergroups
+groupadd webservices
+adduser codedeploy
+usermod -a -G webservices codedeploy
+usermod -a -G apache codedeploy
