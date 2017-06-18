@@ -21,11 +21,12 @@ files:
     destination: /etc/httpd/conf/
 
 permissions:
+#permissions model sucks
     - object: /var
       pattern: "www"
       owner: apache
       group: webservices
-      mode: 2070
+      mode: 2770
       type:
        - directory
 
@@ -36,6 +37,9 @@ hooks:
        runas: root
    AfterInstall:
       - location: _deploy/AfterInstall.sh
+        timeout: 300 #5 minutes
+        runas: root
+      - location: _deploy/SetUserRights.sh
         timeout: 300 #5 minutes
         runas: root
       - location: _deploy/Composer.sh
