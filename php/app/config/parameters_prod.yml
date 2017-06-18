@@ -15,6 +15,6 @@ parameters:
     bucket_region: eu-central-1
     jwt_public_key_path:  '%kernel.root_dir%/../var/jwt/public.pem'    # ssh public key path
     jwt_key_pass_phrase:  G~z'E1B"{aTkkJ7TSkU~XWz&{DQ)5!vcZ_5XTdrU2+c)5<8W@(@BHwO)6u(2_bF                                      # ssh key pass phrase if present
-    jwt_token_ttl: 60*60 #10 seconds
+    jwt_token_ttl: 3600 #10 seconds
 
 
