@@ -25,7 +25,15 @@ permissions:
       pattern: "*"
       owner: apache
       group: webservices
-      mode: 644
+      mode: 0070
+      type:
+        - file
+        - directory
+    - object: /var/www/vendor
+      pattern: "*"
+      owner: apache
+      group: webservices
+      mode: 0070
       type:
         - file
         - directory
