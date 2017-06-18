@@ -29,7 +29,7 @@ permissions:
     - object: /var/www
       owner: codedeploy
       group: webservices
-      except: [/var/www/var]
+      except: [/var/www/var, /var/www/var/*]
       mode: 2740
       type:
        - directory
