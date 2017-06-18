@@ -24,7 +24,7 @@ permissions:
     - object: /var/www
       pattern: "*"
       owner: apache
-      group: apache
+      group: webservices
       mode: 644
       type:
         - file
@@ -41,7 +41,7 @@ hooks:
         runas: root
       - location: _deploy/Composer.sh
         timeout: 300 #5 minutes
-        runas: apache #apache user
+        runas: codedeploy  #same rights as apache
    ApplicationStart:
      - location: _deploy/ApplicationStart.sh
        timeout: 60 #1 minute
