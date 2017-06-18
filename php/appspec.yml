@@ -32,6 +32,9 @@ permissions:
       owner: apache
       group: webservices
       mode: 2070
+      type:
+        - directory
+        - file
 
 hooks:
    BeforeInstall:
