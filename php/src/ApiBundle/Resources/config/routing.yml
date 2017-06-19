@@ -16,4 +16,5 @@ api_file_size:
 
 api_lambda_tag:
     path:     /lambda_tag
+    methods: [POST]
     defaults: { _controller: ApiBundle:Tag:SetTags }

@@ -15,25 +15,85 @@ class TagScore
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    public $id;
+    private $id;
 
     /**
      * @var Gif
      * @ORM\ManyToOne(targetEntity="ApiBundle\Entity\Gif", inversedBy="tagScores")
      */
-    public $gif;
+    private $gif;
 
     /**
      * @var Tag
      * @ORM\ManyToOne(targetEntity="ApiBundle\Entity\Tag")
      */
-    public $tag;
+    private $tag;
 
     /**
      * @var float
      * @ORM\Column(type="float")
      */
-    public $score;
+    private $score;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return Gif
+     */
+    public function getGif()
+    {
+        return $this->gif;
+    }
+
+    /**
+     * @param Gif $gif
+     */
+    public function setGif($gif)
+    {
+        $this->gif = $gif;
+    }
+
+    /**
+     * @return Tag
+     */
+    public function getTag()
+    {
+        return $this->tag;
+    }
+
+    /**
+     * @param Tag $tag
+     */
+    public function setTag($tag)
+    {
+        $this->tag = $tag;
+    }
+
+    /**
+     * @return float
+     */
+    public function getScore()
+    {
+        return $this->score;
+    }
+
+    /**
+     * @param float $score
+     */
+    public function setScore($score)
+    {
+        $this->score = $score;
+    }
+
+
+
+
 
     public function toArray(){
         $tag = $this->tag->toArray();
