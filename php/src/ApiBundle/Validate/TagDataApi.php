@@ -36,7 +36,7 @@ class TagDataApi
      * @return array
      */
     public function getTagsAsArray(){
-        $re = '/(?:([a-z]+)=([0-9]+))/';
+        $re = '/(?:([a-zA-Z]+)=([0-9]+))/';
 
         preg_match_all($re, $this->tags, $matches, PREG_SET_ORDER, 0);
 
