@@ -24,21 +24,16 @@ export class S3Helper {
 
             let read  = new AWS.S3().getObject(options);
 
-            read.on("error", (error) => {
-                console.log("ERROR!", error);
-            });
 
             let fileStream = read.createReadStream();
             let stream = fileStream.pipe(file);
 
             stream.on("finish", function() {
-                console.log("Resolve! :)");
                 resolve(newLocation)
             });
 
             stream.on("error", function(error){
                 reject(error);
-                console.log("Download error! :(" , error);
             });
 
         });

@@ -8,6 +8,7 @@ import { S3Helper } from './src/S3Helper'
 import * as util from "util"
 import {GifCreator} from "./src/GifCreator";
 import config from "./config/parameters"
+import * as RP from "request-promise-native"
 
 function call(event, context, callback){
 
