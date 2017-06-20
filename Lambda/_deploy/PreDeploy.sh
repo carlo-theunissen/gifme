@@ -5,4 +5,5 @@ npm run build
 zip -r deploy.zip \
     ffmpeg \
     gifsicle \
+    private.pem \
     index.js

@@ -8,5 +8,6 @@ export default {
     "result_gif" : '/tmp/result.gif',
     "temp_gif" : '/tmp/tmp.gif',
     "tmp_folder" : "/tmp",
-    "submit_tags_url" : "example.com/test"
+    "submit_tags_url" : "https://gifme.eu/api/lambda_tag",
+    "frames_folder" : "/tmp/frames",
 }

@@ -12,6 +12,9 @@ export class ExecHelper{
         return this.executeCommand(util.format("cp %s %s", old, newLocation));
     }
 
+    public makeFolder(folder: string): Promise<string>{
+        return this.executeCommand(util.format("mkdir %s", folder));
+    }
     public ChmodFile(file : string) : Promise<string>{
         console.log("ChmodFile");
         return this.executeCommand(util.format("chmod 755 %s", file));
