@@ -8,8 +8,8 @@ TIMESTAMP=$(date +%s)
 #build the frontend
 cd frontend
 node node_modules/node-sass/scripts/install.js
-npm rebuild node-sass
 npm install
+npm rebuild node-sass
 node build/build.js $TIMESTAMP
 
 #upload only the "static" folder to the s3 bucket
