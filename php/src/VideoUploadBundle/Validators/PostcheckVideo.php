@@ -43,7 +43,7 @@ class PostcheckVideo
      * @return int
      */
     private function handleUpload(File $file){
-        $name = time() + mt_rand();
+        $name = time() . ""  . mt_rand();
         $this->uploadHandler->upload($file, $name . '.'. $file->getExtension());
         return $name;
     }

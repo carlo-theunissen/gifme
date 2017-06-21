@@ -68,7 +68,7 @@ oneup_uploader:
         gallery:
             frontend: dropzone # or any uploader you use in the frontend
             storage:
-                directory: "%kernel.root_dir%/../uploads/"
+                directory: "%kernel.root_dir%/../var/uploads/"
 
 video_upload:
     ffprobe_command: /usr/local/bin/ffprobe
