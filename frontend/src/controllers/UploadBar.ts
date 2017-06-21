@@ -62,7 +62,7 @@ export default class UploadBar extends Vue {
                     let out = [];
                     let lastValue = 0;
                     if(response.data.hasOwnProperty('tags')) { //it is possible that the tags are not made yet, so we have to check for it
-                        for (let i = 0; i < response.data.tags.length && i < 4; i++) {
+                        for (let i = 0; i < response.data.tags.length && out.length < 4; i++) {
                             if (response.data.tags[i].score != lastValue) {
                                 out.push(response.data.tags[i].name);
                                 lastValue = response.data.tags[i].score;
