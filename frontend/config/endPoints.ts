@@ -16,6 +16,6 @@ export default {
     tags: frontController + "api/tags",
     gifs: frontController + "api/gifs",
     webSocketGifs: websocket,
-    gifLocation: "https://gifs.gifme.eu/",
+    gifLocation: "https://gifme.eu/out/",
 
 }
