@@ -19,6 +19,23 @@ use Symfony\Component\HttpFoundation\Request;
 class TagController extends Controller
 {
 
+    public function getPopularTagsAction(Request $request){
+        /** @var EntityRepository $repository */
+        $repository = $this->getDoctrine()->getManager()->getRepository('ApiBundle:Tag');
+
+        $query  = $repository
+            ->createQueryBuilder('t')
+            ->select('t')
+            ->setMaxResults(4)
+            ->getQuery();
+        $out = ['tags' => []];
+        /** @var Tag $tag */
+        foreach ($query->getResult() as $tag){
+            $out['tags'][] = $tag->toApiResponseArray();
+        }
+        return new JsonResponse($out);
+    }
+
     public function selectAllAction(Request $request){
 
 
@@ -26,7 +43,7 @@ class TagController extends Controller
         $out = ['tags' => []];
         /** @var Tag $tag */
         foreach ($repository->findAll() as $tag){
-            $out['tags'][] = $tag->toArray();
+            $out['tags'][] = $tag->toApiResponseArray();
         }
         return new JsonResponse($out);
     }

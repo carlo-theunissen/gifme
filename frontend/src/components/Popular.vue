@@ -1,5 +1,5 @@
 <template>
-    <div id="container">
+    <div id="container" v-show="state === PopularState.ACTIVE">
         <div class="row" id="tags">
             <div class="col-xs-3"><button class="button selected">New</button></div>
             <div class="col-xs-3"><button class="button">New</button></div>
@@ -27,16 +27,7 @@
     </div>
 </template>
 
-<script lang="ts">
-import Component from 'vue-class-component'
-import Vue from 'vue'
-
-@Component({
-    name: "popular",
-})
-export default class Popular extends Vue{
-    public test:string = "";
-}
+<script lang="ts" src="../controllers/Popular.ts">
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

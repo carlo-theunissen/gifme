@@ -51,7 +51,7 @@ class Tag
         $this->name = $name;
     }
 
-    public function toArray(){
+    public function toApiResponseArray(){
         return [
             'name' => $this->name,
             'id' => $this->id

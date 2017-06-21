@@ -34,13 +34,16 @@
             <div id="result" class="row">
                 <div class="col-sm-6"><img src="#" class="img" v-bind:src="result.img" width="100%" alt="Your lovely gif" /></div>
                 <div class="col-sm-6">
+
                     <h2>Your gif is ready!</h2>
                     <input title="shareLink" id="link" readonly class="borderContainer" v-bind:value="result.img"/>
+
                     <div class="borderContainer" id="tags">
                         <span v-for="tag in result.tags"> {{ tag }} </span>
-                    <div class="row" id="buttons">
-                        <div class="col-xs-5"><button id="download">Gif me :)</button> </div>
-                        <div class="col-xs-7"><button id="share">Share</button></div>
+                        <div class="row" id="buttons">
+                            <div class="col-xs-5"><button id="download">Gif me :)</button> </div>
+                            <div class="col-xs-7"><button id="share">Share</button></div>
+                        </div>
                     </div>
                 </div>
             </div>

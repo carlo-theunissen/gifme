@@ -6,10 +6,6 @@ api_gifs_id:
     path:     /gifs/{id}
     defaults: { _controller: ApiBundle:Gif:getSingleGif }
 
-api_tags:
-    path:     /tags
-    defaults: { _controller: ApiBundle:Tag:selectAll }
-
 api_formats:
     path:     /video/formats
     defaults: { _controller: ApiBundle:Video:selectAcceptedFormats }
@@ -18,7 +14,15 @@ api_file_size:
     path:     /video/filesize
     defaults: { _controller: ApiBundle:Video:selectMaxFileSize }
 
+api_tags:
+    path:     /tags
+    defaults: { _controller: ApiBundle:Tag:selectAll }
+
 api_lambda_tag:
     path:     /lambda_tag
     methods: [POST]
     defaults: { _controller: ApiBundle:Tag:SetTags }
+
+api_gifs_popular:
+    path:     /tags/popular
+    defaults: { _controller: ApiBundle:Tag:getPopularTags }

@@ -96,7 +96,7 @@ class TagScore
 
 
     public function toArray(){
-        $tag = $this->tag->toArray();
+        $tag = $this->tag->toApiResponseArray();
         $tag['score'] = $this->score;
         return $tag;
     }

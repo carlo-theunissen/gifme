@@ -15,7 +15,9 @@ export default {
     gifInfo: frontController + "api/gifs/",
     tags: frontController + "api/tags",
     gifs: frontController + "api/gifs",
+    popularTags: frontController + "api/tags/popular",
     webSocketGifs: websocket,
     gifLocation: "https://gifme.eu/out/",
+
 
 }
