@@ -26,7 +26,7 @@ class TagDataApi
      *
      * @Assert\NotBlank(message = "empty")
      * @Assert\Regex(
-     *     pattern = "/(?:([a-z]+)=([0-9]+))/",
+     *     pattern = "/(?:([a-zA-Z]+)=([0-9]+))/",
      *     message = "invalid_format"
      * )
      */

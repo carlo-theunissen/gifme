@@ -42,8 +42,7 @@ export default class UploadBar extends Vue {
 
             tempImg.onload = () => {
                 loadTagsPromise
-                    .then( x => {
-                        this.result.tags = x;
+                    .then( () => {
                         this.state = UploadSates.VIEW_RESULT;
                     });
 
@@ -62,15 +61,18 @@ export default class UploadBar extends Vue {
                 .then((response : any) => {
                     let out = [];
                     let lastValue = 0;
-
-                   for(let i = 0; i < response.data.tags.length && i < 4; i++){
-                       if(response.data.tags[i].score != lastValue){
-                           out.push(response.data.tags[i].name);
-                           lastValue = response.data.tags[i].score;
-                       }
-                   }
+                    if(response.data.hasOwnProperty('tags')) { //it is possible that the tags are not made yet, so we have to check for it
+                        for (let i = 0; i < response.data.tags.length && i < 4; i++) {
+                            if (response.data.tags[i].score != lastValue) {
+                                out.push(response.data.tags[i].name);
+                                lastValue = response.data.tags[i].score;
+                            }
+                        }
+                    }
+                    this.result.tags = out;
                     resolve(out);
                 })
+
                 .catch( x => reject(x));
         });
     }
