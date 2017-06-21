@@ -12,8 +12,10 @@ export default {
     fileUpload : frontController + "_uploader/gallery/upload",
     fileSize: frontController + "api/video/filesize",
     supportedFormats: frontController + "api/video/formats",
+    gifInfo: frontController + "api/gifs/",
     tags: frontController + "api/tags",
     gifs: frontController + "api/gifs",
     webSocketGifs: websocket,
-    gifLocation: "https://s3.eu-central-1.amazonaws.com/gifcreatoruat/"
+    gifLocation: "https://gifs.gifme.eu/",
+
 }

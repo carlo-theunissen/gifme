@@ -35,6 +35,16 @@ class GifController extends Controller
         return new JsonResponse();
     }
 
+    public function getSingleGifAction($id){
+        /** @var Gif[] $gif */
+        $gif = $this->getDoctrine()->getManager()->getRepository('ApiBundle:Gif')->findByFileName($id);
+        if($gif != null && count($gif) > 0) {
+
+            return new JsonResponse($gif[0]->toArray());
+        }
+        return new JsonResponse();
+    }
+
     /**
      * @param array $gifEntity
      * @return array

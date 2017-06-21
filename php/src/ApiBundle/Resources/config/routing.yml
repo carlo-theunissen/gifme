@@ -2,6 +2,10 @@ api_gifs:
     path:     /gifs
     defaults: { _controller: ApiBundle:Gif:select }
 
+api_gifs_id:
+    path:     /gifs/{id}
+    defaults: { _controller: ApiBundle:Gif:getSingleGif }
+
 api_tags:
     path:     /tags
     defaults: { _controller: ApiBundle:Tag:selectAll }

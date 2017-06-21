@@ -12,6 +12,9 @@ class ApiHelper{
     public get(name : string, data : {}): AxiosPromise{
         return axios.get(endpoints[name] + this.createParameterString(data));
     }
+    public getGefId(id : number) : AxiosPromise{
+        return axios.get(endpoints['gifInfo'] + id)
+    }
     public post(name : string, data : {}): AxiosPromise{
         return axios.post(endpoints[name], data);
     }

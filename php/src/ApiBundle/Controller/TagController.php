@@ -61,6 +61,7 @@ class TagController extends Controller
         return new JsonResponse(false);
     }
 
+
     /**
      * @param EntityRepository $repository
      * @param $name

@@ -31,13 +31,21 @@ export default class UploadBar extends Vue {
         this.setServerProperties();
         this.ws = new WebSocket(apiConfig.webSocketGifs);
         this.ws.onmessage = this.websocketMessage;
+
+
     }
     private websocketMessage(data: MessageEvent) : void{
         if(data.data.indexOf(this.lookingId) > -1){
-            console.log(apiConfig.gifLocation + data.data);
             let tempImg = new Image();
+            const loadTagsPromise = this.loadTags();
+
             tempImg.onload = () => {
-                this.state = UploadSates.VIEW_RESULT;
+                loadTagsPromise
+                    .then( x => {
+                        this.result.tags = x;
+                        this.state = UploadSates.VIEW_RESULT;
+                    });
+
             };
 
             this.result.img = apiConfig.gifLocation + data.data;
@@ -46,7 +54,27 @@ export default class UploadBar extends Vue {
         }
     }
 
-    public mounted () {
+    private loadTags() : Promise<string[]>{
+        return new Promise<string[]>((resolve, reject) => {
+            ApiHelper
+                .getGefId(this.lookingId)
+                .then((response : any) => {
+                    let out = [];
+                    let lastValue = 0;
+
+                   for(let i = 0; i < response.data.tags.length && i < 4; i++){
+                       if(response.data.tags[i].score != lastValue){
+                           out.push(response.data.tags[i].name);
+                           lastValue = response.data.tags[i].score;
+                       }
+                   }
+                    resolve(out);
+                })
+                .catch( x => reject(x));
+        });
+    }
+
+    public mounted () : void{
         this.upload = this.$refs.upload;
         this.upload = this.upload.$data;
     }
@@ -64,7 +92,6 @@ export default class UploadBar extends Vue {
         this.error = errorMsg;
         this.state = UploadSates.WAIT_FOR_INPUT;
         this.loadProgress = 0;
-        console.log(errorMsg);
     }
     public handleSuccess(successMsg: any) : void{
         if(! successMsg.success ){
@@ -100,7 +127,8 @@ export default class UploadBar extends Vue {
     upload:any = {};
     events : UploadBarEventController;
     result:any = {
-        "img" : "TEMP"
+        "img" : "",
+        "tags" : []
     };
     error : string = "";
     ws: WebSocket;
