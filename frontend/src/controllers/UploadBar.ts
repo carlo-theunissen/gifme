@@ -36,6 +36,7 @@ export default class UploadBar extends Vue {
     }
     private websocketMessage(data: MessageEvent) : void{
         if(data.data.indexOf(this.lookingId) > -1){
+            console.log(data);
             let tempImg = new Image();
             const loadTagsPromise = this.loadTags();
 
