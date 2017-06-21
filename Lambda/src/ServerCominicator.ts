@@ -24,6 +24,7 @@ export class ServerCominicator{
         });
     }
     public sendTagsToServer(tags: any, id) : Promise<string>{
+        console.log(tags, id);
         return new Promise<string>((resolve, reject) => {
             let options = {
                 method: 'POST',

@@ -36,7 +36,8 @@ export class FfmpegHelper {
                     Fs.readdir(outFolder, (err, files) => {
                         resolve(files);
                     })
-                });
+                })
+                .catch(x => reject(x));
 
         });
     }

@@ -82,7 +82,7 @@ function readMessages(){
 
 
                 var body = JSON.parse(data.Messages[i].Body);
-                if(sended.indexOf(body.Records[0].s3.object.key) === -1) {
+                if(body.hasOwnProperty("Records") && body.Records.length > 0 && sended.indexOf(body.Records[0].s3.object.key) === -1) {
                     sended.push(body.Records[0].s3.object.key); //prevent double sending
 
                     if(sended.length > 100) {

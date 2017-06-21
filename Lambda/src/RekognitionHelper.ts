@@ -15,6 +15,7 @@ export class RekognitionHelper {
     }
 
     public getLabelsFromVideo(videoFile : string) : Promise<any[]>{
+        console.log("Get Labels From Video");
         return new Promise((resolve, reject) => {
             let exec = new ExecHelper();
             let ffmpegHelper = new FfmpegHelper();
@@ -22,8 +23,14 @@ export class RekognitionHelper {
             exec.makeFolder(config.frames_folder)
                 .then(() => ffmpegHelper.createFrames(videoFile, config.frames_folder) )
                 .then(x => this.getLabels(x))
-                .then(resolve)
-                .catch(reject)
+                .then( x => {
+                    console.log("Resolve :)", x);
+                    resolve(x)
+                })
+                .catch( x => {
+                    console.log("catch :(", x);
+                    reject(x)
+                })
         });
     }
 

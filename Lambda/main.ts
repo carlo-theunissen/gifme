@@ -27,33 +27,34 @@ function call(event, context, callback){
 
     const movieLocation = util.format("%s/%s", config.tmp_folder, name);
 
-    //first: copy the ffmpeg binary and the gifsicle binary to the tmp folder and download the file
-    Promise.all([
+    exec.executeCommand(util.format("rm -rf %s/*", config.tmp_folder))
+        .then( () =>
+            //first: copy the ffmpeg binary and the gifsicle binary to the tmp folder and download the file
+            Promise.all([
 
-        exec
-            .moveFile('ffmpeg', config.ffmpeg_location)
-            .then(() => exec.ChmodFile(config.ffmpeg_location)),
+                exec
+                    .moveFile('ffmpeg', config.ffmpeg_location)
+                    .then(() => exec.ChmodFile(config.ffmpeg_location)),
 
-        exec
-            .moveFile('gifsicle', config.gifsicle_location)
-            .then(() => exec.ChmodFile(config.gifsicle_location)),
+                exec
+                    .moveFile('gifsicle', config.gifsicle_location)
+                    .then(() => exec.ChmodFile(config.gifsicle_location)),
 
-        s3.downloadTo(srcKey, srcBucket, movieLocation)
-    ])
-
-
+                s3.downloadTo(srcKey, srcBucket, movieLocation)
+            ])
+        )
         .then(() => Promise.all([
 
             //make the gif
-            gifCreator.CreateGif(movieLocation)
-                .then(() => s3.uploadTo(util.format(config.s3_upload_location, uploadId), srcBucket, config.result_gif)),
+            gifCreator.CreateGif(movieLocation),
 
             //create the labels from the gif
             rekognition.getLabelsFromVideo(movieLocation)
                 .then(x => server.sendTagsToServer(x, uploadId))
                 .then(x => console.log(x))
-                .catch(x => console.assert(x))
+
         ]))
+        .then(() => s3.uploadTo(util.format(config.s3_upload_location, uploadId), srcBucket, config.result_gif))
         .then(() => callback(null, "Successfully uploaded " + util.format(config.s3_upload_location, uploadId)))
 
 };
