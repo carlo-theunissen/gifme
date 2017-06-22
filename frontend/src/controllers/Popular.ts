@@ -8,7 +8,7 @@ import UploadBarEventController from './UploadBarEventController'
 import apiConfig from '../../config/endPoints'
 import axios from "axios"
 import ApiHelper from "../helpers/ApiHelper"
-import * as Linq from "Linq"
+import * as Enumerable from "linq";
 import { Watch } from 'vue-property-decorator'
 
 enum PopularState{
@@ -54,7 +54,7 @@ export default class Popular extends Vue {
     }
 
     public UIElementActiveClass(index: number) : string{
-        return Linq.from(this.activeTags).any(x => x == index) ? "selected" : "";
+        return Enumerable.from(this.activeTags).any(x => x == index) ? "selected" : "";
     }
     public ContainerClass(){
         return this.state === PopularState.PROCESSING ? "processing" : "";
@@ -87,7 +87,7 @@ export default class Popular extends Vue {
         this.state = PopularState.PROCESSING;
 
         let serverIds : number[] = [];
-        Linq.from(val).forEach((el, index) => {
+        Enumerable.from(val).forEach((el, index) => {
             serverIds.push(this.tags[el].id);
         });
 
@@ -128,7 +128,7 @@ export default class Popular extends Vue {
         let popularTags = ApiHelper.get("popularTags", {});
         popularTags.then((response : any) => {
             if(response.data.hasOwnProperty("tags")){
-                this.tags =  Linq.from( <tagInterface[]> response.data.tags).take(4).toArray();
+                this.tags =  Enumerable.from( <tagInterface[]> response.data.tags).take(4).toArray();
             }
         });
         axios.all([popularTags]).then(() => {
