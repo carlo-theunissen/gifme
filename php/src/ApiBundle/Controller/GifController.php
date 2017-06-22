@@ -23,11 +23,22 @@ class GifController extends Controller
             /** @var EntityRepository $repository */
            $repository =  $this->getDoctrine()->getManager()->getRepository('ApiBundle:Gif');
 
-           $query = $repository->createQueryBuilder('g')
-               ->join('g.tagScores', 't')
-               ->where('t.tag = :id')
-               ->setParameter('id', $data->tags)
-                ->getQuery();
+           $builder =  $repository->createQueryBuilder('g')
+                ->join('g.tagScores', 't');
+
+           $tags = $data->getTagsAsArray();
+           for ($i =0 ; $i < count($tags); $i++){
+
+               if($i == 0) {
+                   $builder->where('t.tag = :id'.$i);
+               } else {
+                   $builder->orWhere('t.tag = :id'.$i);
+               }
+
+               $builder->setParameter('id'.$i, $tags[$i]);
+           }
+
+           $query = $builder->getQuery();
 
            return new JsonResponse($this->createJsonResponseFromGifs($query->getResult()));
 

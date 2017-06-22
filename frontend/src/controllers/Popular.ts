@@ -13,7 +13,8 @@ import { Watch } from 'vue-property-decorator'
 
 enum PopularState{
     INSTALLING,
-    ACTIVE
+    ACTIVE,
+    PROCESSING
 }
 
 interface tagInterface{
@@ -38,7 +39,8 @@ export default class Popular extends Vue {
     public PopularState : any = PopularState;
     public state : PopularState = PopularState.INSTALLING;
     public tags : tagInterface[];
-    public shownGifs : calculatedGifInterface[] = [];
+    public shownGifs : calculatedGifInterface[][] = [];
+
     private activeTags : number[];
 
 
@@ -49,12 +51,27 @@ export default class Popular extends Vue {
         this.activeTags = [];
 
 
-
-        setTimeout(() => this.activeTags.push(1), 10000);
     }
 
     public UIElementActiveClass(index: number) : string{
         return Linq.from(this.activeTags).any(x => x == index) ? "selected" : "";
+    }
+    public ContainerClass(){
+        return this.state === PopularState.PROCESSING ? "processing" : "";
+    }
+
+    public UIMenuElementClicked(index : number) : void {
+        if(this.state != PopularState.ACTIVE){
+            return;
+        }
+        const find : number = this.activeTags.findIndex((x) => x == index);
+        let active = this.activeTags;
+        if(find >= 0){
+            this.activeTags.splice(find, 1);
+        } else {
+            this.activeTags.push(index);
+        }
+
     }
 
     private setFirstMenuitemActive(){
@@ -63,6 +80,12 @@ export default class Popular extends Vue {
 
     @Watch('activeTags')
     private onTagsChanged(val: number[], oldVal: number[]) {
+        if(val.length == 0){
+            this.shownGifs = [];
+            return;
+        }
+        this.state = PopularState.PROCESSING;
+
         let serverIds : number[] = [];
         Linq.from(val).forEach((el, index) => {
             serverIds.push(this.tags[el].id);
@@ -70,14 +93,33 @@ export default class Popular extends Vue {
 
         ApiHelper.get("gifs", {tags: serverIds.join(',')})
             .then(data => {
-                this.shownGifs = this.makeCalculatedGifs(data.data.gifs);
-            });
+
+                let calculedGifs : calculatedGifInterface[] = this.makeCalculatedGifs(data.data.gifs);
+                this.shownGifs = this.makeGifCollections(calculedGifs);
+
+                this.state = PopularState.ACTIVE;
+            }); 
     }
     private makeCalculatedGifs(gifs : gifInterface[]) : calculatedGifInterface[]{
         let out : calculatedGifInterface[] = [];
         gifs.forEach(x => {
             let temp = <calculatedGifInterface> x;
-            temp.location = apiConfig.gifLocation + temp.fileName + '.gif';
+            temp.location = apiConfig.gifLocationFrontpage + temp.fileName + '.gif';
+            out.push(temp);
+        });
+        return out;
+    }
+
+    private makeGifCollections(gifs : calculatedGifInterface[]) : calculatedGifInterface[][]{
+        let out : calculatedGifInterface[][] = [];
+        let index = 0;
+        gifs.forEach((x : calculatedGifInterface) => {
+            const workingIndex = index%3;
+            if(out.length-1 < workingIndex){
+                out[workingIndex] = [];
+            }
+            out[workingIndex].push(x);
+            index++;
         });
         return out;
     }
@@ -86,7 +128,7 @@ export default class Popular extends Vue {
         let popularTags = ApiHelper.get("popularTags", {});
         popularTags.then((response : any) => {
             if(response.data.hasOwnProperty("tags")){
-                this.tags = response.data.tags;
+                this.tags =  Linq.from( <tagInterface[]> response.data.tags).take(4).toArray();
             }
         });
         axios.all([popularTags]).then(() => {

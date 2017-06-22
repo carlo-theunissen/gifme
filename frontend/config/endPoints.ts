@@ -5,7 +5,7 @@
 let frontController = "https://"+window.location.hostname+"/"; //frontcontroller
 let websocket = "wss://socket.gifme.eu/ws";
 if(location.href.indexOf("localhost") >= 0){
-    frontController = window.location.protocol + "//localhost/gifCreator/php/html/app_dev.php/";
+    frontController = window.location.protocol + "//localhost:8888/gifcreator/php/html/app_dev.php/";
 }
 
 export default {
@@ -18,6 +18,7 @@ export default {
     popularTags: frontController + "api/tags/popular",
     webSocketGifs: websocket,
     gifLocation: "https://gifme.eu/", //trailing slash
+    gifLocationFrontpage: "https://gifme.eu/out/", //trailing slash
 
 
 }

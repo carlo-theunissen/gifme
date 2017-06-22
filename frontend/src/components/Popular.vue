@@ -1,13 +1,13 @@
 <template>
-    <div id="container" v-show="state === PopularState.ACTIVE">
+    <div id="container" v-bind:class="ContainerClass()" v-show="state === PopularState.ACTIVE || state === PopularState.PROCESSING">
         <div class="row" id="tags">
-            <div class="col-xs-3" v-for="(tag, index) in tags"><button class="button" v-bind:class="UIElementActiveClass(index)">{{ tag.name }}</button></div>
+            <div class="col-xs-3" v-for="(tag, index) in tags"><button class="button" v-on:click="UIMenuElementClicked(index)" v-bind:class="UIElementActiveClass(index)">{{ tag.name }}</button></div>
         </div>
 
         <div id="items" class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" v-for="gif in shownGifs">
-                    <div class="item"><img v-bind:src ="gif.location"> </div>
+                <div class="col-sm-4" v-for="gifCol in shownGifs">
+                    <div class="item" v-for="gif in gifCol"><img width="100%" v-bind:src ="gif.location"> </div>
                 </div>
             </div>
         </div>
@@ -23,6 +23,8 @@
     #container
         margin-top: 60px
 
+        &.processing
+            opacity: 0.5
     #tags
         max-width: 600px
         width: 100%
@@ -48,8 +50,10 @@
             .item
                 border: 2px $border-color solid
                 width: 100%
-                height: 40px
+                padding: 8px
+                margin-top: 8px
     .button
+        outline: none
         background-color: white
         border: 2px $secondary-color solid
         color: $secondary-color
@@ -61,11 +65,13 @@
         text-transform: uppercase
         height: 40px
 
-        &.selected
-            cursor: default
 
         &.selected, &:hover
             background-color: $secondary-color
             color: white
+
+        &.selected:hover
+            background-color: white
+            color: $secondary-color
 
 </style>
