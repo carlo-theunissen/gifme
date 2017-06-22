@@ -33,6 +33,7 @@ export default class UploadBar extends Vue {
         this.ws.onmessage = this.websocketMessage;
 
 
+
     }
     private websocketMessage(data: MessageEvent) : void{
         if(data.data.indexOf(this.lookingId) > -1){
@@ -113,7 +114,7 @@ export default class UploadBar extends Vue {
            this.size = response.data.max_file_size * 1024 * 1024;
         });
         axios.all([filesize]).then(() => {
-            this.state = UploadSates.WAIT_FOR_INPUT;
+            this.state = UploadSates.INSTALLING; 
             this.events.setMaxSize(this.size);
         })
     }
@@ -131,7 +132,7 @@ export default class UploadBar extends Vue {
     events : UploadBarEventController;
     result:any = {
         "img" : "",
-        "tags" : []
+        "tags" : [ "Human", "Person", "Turtle", "Advocado"]
     };
     error : string = "";
     ws: WebSocket;

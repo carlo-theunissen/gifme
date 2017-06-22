@@ -40,10 +40,10 @@
 
                     <div class="borderContainer" id="tags">
                         <span v-for="tag in result.tags"> {{ tag }} </span>
-                        <div class="row" id="buttons">
-                            <div class="col-xs-5"><button id="download">Gif me :)</button> </div>
-                            <div class="col-xs-7"><button id="share">Share</button></div>
-                        </div>
+                    </div>
+                    <div class="row" id="buttons">
+                        <div class="col-xs-5"><button id="download">Gif me :)</button> </div>
+                        <div class="col-xs-7"><button id="share">Share</button></div>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
         border: 1px darken($primary-color, 20%) solid
     #result
         width: 100%
-        max-width: 550px
+        max-width: 600px
         margin: 0 auto
         text-align: left
         #link
@@ -141,6 +141,8 @@
 
         #tags
             border: none
+            height: auto
+            
 
             span
                 border: 1px darken($border-color, 30%) solid
@@ -148,7 +150,8 @@
                 font-weight: 100
                 border-radius: 6px
                 padding: 5px
-                margin-right: 8px
+                margin: 4px
+                display: inline-block
 
         #buttons
             margin-top: $result-margin
