@@ -114,7 +114,7 @@ export default class UploadBar extends Vue {
            this.size = response.data.max_file_size * 1024 * 1024;
         });
         axios.all([filesize]).then(() => {
-            this.state = UploadSates.INSTALLING; 
+            this.state = UploadSates.WAIT_FOR_INPUT;
             this.events.setMaxSize(this.size);
         })
     }

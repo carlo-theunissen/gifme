@@ -1,27 +1,14 @@
 <template>
     <div id="container" v-show="state === PopularState.ACTIVE">
         <div class="row" id="tags">
-            <div class="col-xs-3"><button class="button selected">New</button></div>
-            <div class="col-xs-3"><button class="button">New</button></div>
-            <div class="col-xs-3"><button class="button">New</button></div>
-            <div class="col-xs-3"><button class="button">New</button></div>
+            <div class="col-xs-3" v-for="(tag, index) in tags"><button class="button" v-bind:class="UIElementActiveClass(index)">{{ tag.name }}</button></div>
         </div>
 
         <div id="items" class="container-fluid">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="item"></div>
+                <div class="col-sm-4" v-for="gif in shownGifs">
+                    <div class="item"><img v-bind:src ="gif.location"> </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="item"></div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="item"></div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="item"></div>
-                </div>
-
             </div>
         </div>
     </div>
