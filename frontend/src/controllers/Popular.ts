@@ -98,7 +98,7 @@ export default class Popular extends Vue {
                 this.shownGifs = this.makeGifCollections(calculedGifs);
 
                 this.state = PopularState.ACTIVE;
-            }); 
+            });
     }
     private makeCalculatedGifs(gifs : gifInterface[]) : calculatedGifInterface[]{
         let out : calculatedGifInterface[] = [];

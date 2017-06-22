@@ -6,7 +6,7 @@
 
         <div id="items" class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" v-for="gifCol in shownGifs">
+                <div class="gifcol col-md-4" v-for="gifCol in shownGifs">
                     <div class="item" v-for="gif in gifCol"><img width="100%" v-bind:src ="gif.location"> </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
         &:last-child
             margin: 0
     .row
-        .col-sm-4
+        .gifcol
             padding: 5px
 
 
