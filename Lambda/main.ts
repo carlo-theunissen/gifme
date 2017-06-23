@@ -10,7 +10,6 @@ import * as util from "util"
 import {GifCreator} from "./src/GifCreator";
 import {ServerCominicator} from "./src/ServerCominicator";
 import config from "./config/parameters"
-import * as RP from "request-promise-native"
 
 function call(event, context, callback){
 
