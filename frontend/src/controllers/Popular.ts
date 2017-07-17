@@ -1,15 +1,17 @@
 /**
  * Created by carlo on 21-6-2017.
  */
+
+declare var require: any
+
 import Vue from 'vue'
-import * as Upload from 'vue-upload-component'
 import Component from 'vue-class-component'
-import UploadBarEventController from './UploadBarEventController'
 import apiConfig from '../../config/endPoints'
 import axios from "axios"
 import ApiHelper from "../helpers/ApiHelper"
 import * as Enumerable from "linq";
 import { Watch } from 'vue-property-decorator'
+import GifItem from '../components/GifItem.vue'
 
 enum PopularState{
     INSTALLING,
@@ -26,20 +28,22 @@ interface gifInterface {
     fileName : string;
     tags : tagInterface[];
 }
-interface calculatedGifInterface extends gifInterface{
+export interface CalculatedGifInterface extends gifInterface{
     location : string;
 }
 
 @Component({
     name: "popular",
 
-    components: { }
+    components: {
+        "GifItem" : GifItem
+    }
 })
 export default class Popular extends Vue {
     public PopularState : any = PopularState;
     public state : PopularState = PopularState.INSTALLING;
     public tags : tagInterface[];
-    public shownGifs : calculatedGifInterface[][] = [];
+    public shownGifs : CalculatedGifInterface[][] = [];
 
     private activeTags : number[];
 
@@ -65,7 +69,6 @@ export default class Popular extends Vue {
             return;
         }
         const find : number = this.activeTags.findIndex((x) => x == index);
-        let active = this.activeTags;
         if(find >= 0){
             this.activeTags.splice(find, 1);
         } else {
@@ -93,30 +96,37 @@ export default class Popular extends Vue {
             }
         });
 
+
+
         ApiHelper.get("gifs", {tags: serverIds.join(',')})
             .then(data => {
 
-                let calculedGifs : calculatedGifInterface[] = this.makeCalculatedGifs(data.data.gifs);
+                let calculedGifs : CalculatedGifInterface[] = this.makeCalculatedGifs(data.data.gifs);
                 this.shownGifs = this.makeGifCollections(calculedGifs);
 
                 this.state = PopularState.ACTIVE;
             });
     }
+<<<<<<< HEAD
     private makeCalculatedGifs(gifs : gifInterface[]) : calculatedGifInterface[]{
         let out : calculatedGifInterface[] = [];
         gifs = gifs || [];
+=======
+    private makeCalculatedGifs(gifs : gifInterface[]) : CalculatedGifInterface[]{
+        let out : CalculatedGifInterface[] = [];
+>>>>>>> e0222c51b5d7d06ae90c02ebe4a71d3dae5e8714
         gifs.forEach(x => {
-            let temp = <calculatedGifInterface> x;
+            let temp = <CalculatedGifInterface> x;
             temp.location = apiConfig.gifLocationFrontpage + temp.fileName + '.gif';
             out.push(temp);
         });
         return out;
     }
 
-    private makeGifCollections(gifs : calculatedGifInterface[]) : calculatedGifInterface[][]{
-        let out : calculatedGifInterface[][] = [];
+    private makeGifCollections(gifs : CalculatedGifInterface[]) : CalculatedGifInterface[][]{
+        let out : CalculatedGifInterface[][] = [];
         let index = 0;
-        gifs.forEach((x : calculatedGifInterface) => {
+        gifs.forEach((x : CalculatedGifInterface) => {
             const workingIndex = index%3;
             if(out.length-1 < workingIndex){
                 out[workingIndex] = [];

@@ -7,7 +7,7 @@
         <div id="items" class="container-fluid">
             <div class="row">
                 <div class="gifcol col-md-4" v-for="gifCol in shownGifs">
-                    <div class="item" v-for="gif in gifCol"><img width="100%" v-bind:src ="gif.location"> </div>
+                    <div class="item" v-for="gif in gifCol"><GifItem  v-bind:gif ="gif" ></GifItem> </div>
                 </div>
             </div>
         </div>
