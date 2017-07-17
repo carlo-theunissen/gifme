@@ -24,7 +24,7 @@ api_lambda_tag:
     defaults: { _controller: ApiBundle:Tag:SetTags }
 
 api_lambda_gif:
-    path:     /testtest
+    path:     /lambda_gif
     methods: [POST]
     defaults: { _controller: ApiBundle:Gif:setGif }
 
