@@ -59,22 +59,23 @@ class TagController extends Controller
 
         if($form->isValid()){
             $gif = $this->getGifByName($em->getRepository('ApiBundle:Gif'), $data->gifId);
-            foreach ($gif->getTagScores() as $oldEntity ){
-                $em->remove($oldEntity);
-            }
+            if($gif != null) {
+                foreach ($gif->getTagScores() as $oldEntity) {
+                    $em->remove($oldEntity);
+                }
 
-            $gif->setTagScores(new ArrayCollection());
-            foreach ($data->getTagsAsArray() as $name => $value){
-                $coll = new TagScore();
-                $coll->setGif($gif);
-                $coll->setScore($value);
-                $coll->setTag($this->getTagByName($repository, $name));
-                $em->persist($coll);
+                $gif->setTagScores(new ArrayCollection());
+                foreach ($data->getTagsAsArray() as $name => $value) {
+                    $coll = new TagScore();
+                    $coll->setGif($gif);
+                    $coll->setScore($value);
+                    $coll->setTag($this->getTagByName($repository, $name));
+                    $em->persist($coll);
+                }
+                $em->flush();
+                return new JsonResponse(true);
             }
-            $em->flush();
-            return new JsonResponse(true);
         }
-        Debug::dump($form->getErrors(false)->current());
         return new JsonResponse(false);
     }
 
@@ -94,6 +95,7 @@ class TagController extends Controller
         }
         return $entity;
     }
+
     private function getTagByName( EntityRepository $repository, $name){
         $em = $this->getDoctrine()->getManager();
         /** @var Tag $entity */

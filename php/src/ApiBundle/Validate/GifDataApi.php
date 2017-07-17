@@ -9,44 +9,25 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Date: 24/05/2017
  * Time: 23:16
  */
-class TagDataApi
+class GifDataApi
 {
     /**
      * @var integer
      *
+     * @Assert\NotBlank(message = "empty")
      * @Assert\Type(
      *     type="integer",
      *     message="no_integer"
      * )
      */
-    public $gifId;
+    public $fileName;
 
     /**
      * koe=90,test=10
      *
      * @Assert\NotBlank(message = "empty")
-     * @Assert\Regex(
-     *     pattern = "/(?:([a-zA-Z]+)=([0-9]+))/",
-     *     message = "invalid_format"
-     * )
+     * @Assert\Type("float", message="no_float")
      */
-    public $tags;
-
-    /**
-     * @return array
-     */
-    public function getTagsAsArray(){
-        $re = '/(?:([a-zA-Z]+)=([0-9]+))/';
-
-        preg_match_all($re, $this->tags, $matches, PREG_SET_ORDER, 0);
-
-        $out = [];
-
-        for($i = 0; $i < count($matches); $i++){
-            $out[$matches[$i][1]] = $matches[$i][2];
-
-        }
-        return $out;
-    }
+    public $ratio;
 
 }

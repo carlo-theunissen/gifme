@@ -107,14 +107,8 @@ export default class Popular extends Vue {
                 this.state = PopularState.ACTIVE;
             });
     }
-<<<<<<< HEAD
-    private makeCalculatedGifs(gifs : gifInterface[]) : calculatedGifInterface[]{
-        let out : calculatedGifInterface[] = [];
-        gifs = gifs || [];
-=======
     private makeCalculatedGifs(gifs : gifInterface[]) : CalculatedGifInterface[]{
         let out : CalculatedGifInterface[] = [];
->>>>>>> e0222c51b5d7d06ae90c02ebe4a71d3dae5e8714
         gifs.forEach(x => {
             let temp = <CalculatedGifInterface> x;
             temp.location = apiConfig.gifLocationFrontpage + temp.fileName + '.gif';

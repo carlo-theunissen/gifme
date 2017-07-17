@@ -14,6 +14,7 @@ class TagDataApi
     /**
      * @var integer
      *
+     * @Assert\NotBlank(message = "empty")
      * @Assert\Type(
      *     type="integer",
      *     message="no_integer"

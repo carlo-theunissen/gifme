@@ -26,6 +26,14 @@ class Gif
      */
     private $tagScores;
 
+
+    /**
+     * The ratio of the image is the height divided by the width
+     * @ORM\Column(type="float", length=100)
+     */
+    private $ratio;
+
+
     public function __construct()
     {
         $this->tagScores = new ArrayCollection();
@@ -64,6 +72,23 @@ class Gif
     }
 
     /**
+     * @return mixed
+     */
+    public function getRatio()
+    {
+        return $this->ratio;
+    }
+
+    /**
+     * @param mixed $ratio
+     */
+    public function setRatio($ratio)
+    {
+        $this->ratio = $ratio;
+    }
+
+
+    /**
      * @param mixed $tagScores
      */
     public function setTagScores($tagScores)
@@ -71,7 +96,7 @@ class Gif
         $this->tagScores = $tagScores;
     }
 
-    public function toArray(){
+    public function toApiResponseArray(){
         $tags = [];
         /** @var TagScore $item */
         foreach($this->tagScores->getValues() as $item){
@@ -79,7 +104,8 @@ class Gif
         }
         return [
             'fileName' => $this->fileName,
-            'tags' => $tags
+            'tags' => $tags,
+            'ratio' => $this->ratio
         ];
     }
 

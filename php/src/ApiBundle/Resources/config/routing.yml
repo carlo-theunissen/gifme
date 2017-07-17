@@ -23,6 +23,11 @@ api_lambda_tag:
     methods: [POST]
     defaults: { _controller: ApiBundle:Tag:SetTags }
 
+api_lambda_gif:
+    path:     /testtest
+    methods: [POST]
+    defaults: { _controller: ApiBundle:Gif:setGif }
+
 api_gifs_popular:
     path:     /tags/popular
     defaults: { _controller: ApiBundle:Tag:getPopularTags }
