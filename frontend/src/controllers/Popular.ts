@@ -80,7 +80,7 @@ export default class Popular extends Vue {
 
     @Watch('activeTags')
     private onTagsChanged(val: number[], oldVal: number[]) {
-        if(val.length == 0){
+        if(val.length == 0 ){
             this.shownGifs = [];
             return;
         }
@@ -88,7 +88,9 @@ export default class Popular extends Vue {
 
         let serverIds : number[] = [];
         Enumerable.from(val).forEach((el, index) => {
-            serverIds.push(this.tags[el].id);
+            if(this.tags[el] !== undefined) {
+                serverIds.push(this.tags[el].id);
+            }
         });
 
         ApiHelper.get("gifs", {tags: serverIds.join(',')})
@@ -102,6 +104,7 @@ export default class Popular extends Vue {
     }
     private makeCalculatedGifs(gifs : gifInterface[]) : calculatedGifInterface[]{
         let out : calculatedGifInterface[] = [];
+        gifs = gifs || [];
         gifs.forEach(x => {
             let temp = <calculatedGifInterface> x;
             temp.location = apiConfig.gifLocationFrontpage + temp.fileName + '.gif';

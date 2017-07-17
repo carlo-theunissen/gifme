@@ -1,7 +1,7 @@
 <template>
     <div id="container" v-bind:class="ContainerClass()" v-show="state === PopularState.ACTIVE || state === PopularState.PROCESSING">
         <div class="row" id="tags">
-            <div class="col-xs-3" v-for="(tag, index) in tags"><button class="button" v-on:click="UIMenuElementClicked(index)" v-bind:class="UIElementActiveClass(index)">{{ tag.name }}</button></div>
+            <div class="col-sm-3" v-for="(tag, index) in tags"><button class="button" v-on:click="UIMenuElementClicked(index)" v-bind:class="UIElementActiveClass(index)">{{ tag.name }}</button></div>
         </div>
 
         <div id="items" class="container-fluid">
@@ -30,16 +30,16 @@
         width: 100%
         margin: 0 auto
 
+
     #items
          max-width: 900px
          width: 100%
          margin: 30px auto
 
-    .col-xs-3
-        width: 23%
+    .col-sm-3
         text-align: center
-        margin-right: 14px
         box-sizing: border-box
+        margin-bottom: 10px
         &:last-child
             margin: 0
     .row
