@@ -11,6 +11,6 @@ The user interface is really intuitive and eases the way how to create a gif. Th
 The Back-end is fully operational in Amazone Web Services. It uses the CDS to deliver the static front-end to the end users. This frontend is dynamic with API calls to the PHP-backend. 
 All API calls are redirected through a load balancer to two servers. 
 When a user uploads a video, it's also processed by one of these servers. The server submits it to the AWS S3 Bucket. Where a lambda server is launched.
-This lambda server starts FFMPEG to convert the video to a gif. 
-Meanwhile, the front-end opens a WebSocket connection to listen when the lambda server is done converting. When this happens, the gif is showed to the end user.
+This lambda server starts FFMPEG to convert the video into a gif. 
+Meanwhile, the front-end opens a WebSocket connection to listen when the lambda server is done converting. When this happens, the gif is shown to the end user.
 <img width="726" alt="screenshot 2018-09-29 at 16 08 36" src="https://user-images.githubusercontent.com/7584025/46246687-01901a80-c402-11e8-8158-7ccb32eb7263.png">
